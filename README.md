@@ -18,7 +18,6 @@ The sites primary audience will be people who are living in condominiums and req
 | **VIEWING & NAVIGATION** |
 | 1 | Shopper | view a list of ventilation filters available on Filter Folks | select the filter I need for my condo |
 | 2 | Shopper | view specific categories of filters, such as those designed for placement behind radiators or above windows | to quickly find products relevant to my needs. |
-
 | **REGISTRATION & USER ACCOUNTS** |
 | 3 | Site User | Easily register for an account on Filter Folks| Enabling me to view my profile and order history |
 | 4 | Site User | Easily log in or out | Access my personal account information |
