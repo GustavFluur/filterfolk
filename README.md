@@ -32,7 +32,7 @@ The sites primary audience will be people who are living in condominiums and req
 | 12 | Shopper | Easily see what I've searched for and the number of results | Quickly decide whether the product I want is available |
 | **PURCHASING & CHECKOUT** |
 | 13 | Shopper | Easily select the size and quantity of filters I wish to purchase | Ensuring I order the correct products |
-| 14 | Shopper | View  items in my shopping bag, adjust quantities if necessary, and enter payment information securely for checkout. | Identify the total cost of my purchase and all items I will receive |
+| 14 | Shopper | View  items in my shopping bag, adjust quantities if necessary | enter payment information securely for checkout. |
 | 18 | Shopper | View an order confirmation after checkout | Verify that I haven't made any mistakes |
 | 19 | Shopper | Receive an email confirmation after checking out | Keep the confirmation of what I've purchased for my records |
 | **ADMIN & STORE MANAGEMENT** |
