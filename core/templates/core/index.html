@@ -25,26 +25,33 @@
             {% endfor %}
         </div>
         <hr>
-        <div class="row text-white bg-dark ml-1">
+        <div class="row text-white bg-dark ml-1 container-fluid">
+
             <h2><span class="badge badge-warning p-3 ">Filter</span> Categories</h2>
+            <hr>
             {% for category in categories %}
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-3">
                         <div class="h-100">
-                            <a href="">
-                                <div class="row">
-                                    <div class="col">
-                                        <h6 class="card-title mt-0 text-white">{{ category.name }}</h6>
-                                        <p class="card-text text-warning">{{ category.products.count }}</p>
+                            <div>
+                                <a href="">
+                                    <div class="row">
+                                        <div class="col">
+
+                                            <h6 class="card-title mt-0 text-white">{{ category.name }}:</h6>
+                                        </div>
+                                        
+                                        <div class="col">
+
+                                            <p class="card-text text-warning">{{ category.products.count }}</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
             {% endfor %}
         </div>
         
-        
-
     </div>
 </div>
 {% endblock %}
