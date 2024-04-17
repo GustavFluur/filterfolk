@@ -3,7 +3,7 @@ from product.models import Category, Product
 
 # Create your views here.
 def index(request):
-    products = Product.objects.filter()[:3]
+    products = Product.objects.filter()[:4]
     for product in products:
         product.price = round(product.price)
     categories = Category.objects.all()
