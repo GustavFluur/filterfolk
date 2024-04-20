@@ -1,0 +1,87 @@
+{% extends 'core/base.html' %}
+
+
+{% block title %}{{ product.name }}{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <div class="image-container my-5">
+                {% if product.image %}
+                    <a href="" target="_blank">
+                        <img class="card-img-top img-fluid rounded" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    </a>
+                    {% else %}
+                    <a href="">
+                        <img class="card-img-top img-fluid rounded" src="" alt="">
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="mb-5 mt-md-5">
+                <h2 class="mb-0">{{ product.name }}</h2>
+                <hr>
+                <p class="lead mb-0 text-left font-weight-bold"><strong>Price: </strong> ${{ product.price }}</p>
+                <br>
+                {% if product.description %}
+                    <p class="lead mb-1 text-left font-weight">
+                        <strong>Product Description:</strong><br>
+                    </p>
+                    <div>
+                        {{ product.description }}
+                    </div>
+                        
+                    
+                {% endif %}
+            
+                <!-----
+                {% if request.user == product.created_by %}
+                    <div class="container">
+                        <div class="row">
+                            <div class="mb-5 mt-md-5">
+                                <p>This is your item!</p>
+
+                                <a href="{% url 'product:edit' product.id %}" class="btn-outline-info btn-lg">Edit</a>
+                                <a href="{% url 'product:delete' product.id %}" class="btn-outline-danger btn-lg">Delete</a>
+
+                            </div>
+                {% else %}
+                            <div class="mt-5">
+                                <a href="#" class="btn-outline-primary btn-lg">Contact Seller</a>
+                            </div>  
+                {% endif %}
+                        </div>
+                    </div>
+                --->
+            </div>
+        </div>
+        <!-----
+        <div class="container-fluid">
+            
+            {% for product in related_products %}
+            <h2><span class="badge badge-primary">Related</span> products: </h2>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card h-100">
+                            <a href="{% url 'product:detail' product.id %}">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="{{ product.image.url }}" class="card-img-top img-fluid">
+                                        <hr>
+                                        <div>
+                                            <h2 class="card-title text-dark mt-0">{{ product.name }}</h2>
+                                            <p class="card-text text-dark">Price: {{ product.price }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+            {% endfor %}
+        </div>
+        --->
+
+</div>
+
+{% endblock %}
