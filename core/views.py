@@ -2,13 +2,13 @@ from django.shortcuts import render
 from product.models import Category, Product
 
 # Create your views here.
-def index(request):
-    products = Product.objects.filter()[:4]
+def products_list(request):
+    products = Product.objects.filter()
     for product in products:
         product.price = round(product.price)
     categories = Category.objects.all()
     
-    return render(request, 'core/index.html', {
+    return render(request, 'core/products.html', {
         'categories': categories,
         'products': products, 
 

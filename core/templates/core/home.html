@@ -1,5 +1,5 @@
 {% extends 'core/base.html' %}
-{% block title %}Home{% endblock %}
+{% block title %}Home | Filter for Folks {% endblock %}
 
 
 {% block content %}
@@ -12,11 +12,11 @@
 </head>
 <body>
 
-    <div class="container-fluid text-info mt-5 text-center">
+    <div class="container-fluid mt-5 text-center">
 
         <div class="row">
 
-            <div class="col-md-6 order-md-2">
+            <div class="col-md-6 order-md-2 text-info">
                 <h1>Welcome to Filter for Folks</h1>
 
                 <ul>
@@ -32,8 +32,16 @@
             <img src="https://images.pexels.com/photos/54300/pexels-photo-54300.jpeg?auto=compress&cs=tinysrgb&w=600" alt="wind">
         </div>
 
-    </div>
 
+
+            <a href="{% url 'products' %}" class="btn btn-outline-info btn-lg">
+                <span>
+                    <i class="far fa-hand-point-right"></i>
+                </span>
+                <span class="text-uppercase">Our Filters</span>
+            </a>
+
+    </div>
 
 </body>
 </html>

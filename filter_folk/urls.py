@@ -17,12 +17,12 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
-from core.views import index, contact, home
+from core.views import products_list, contact, home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',home, name='home'),
-    path('index/', index, name='index'),
+    path('products/', products_list, name='products'),
     path('contact/',contact, name='contact'),
     
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
