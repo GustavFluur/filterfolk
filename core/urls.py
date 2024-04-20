@@ -5,8 +5,9 @@ from core.views import index,contact, home
 app_name = "core"
 
 
-urlpatterns = [ 
+urlpatterns = [
+    path('home/', views.home), 
     path('', views.index),
     path('contact/', views.contact),
-    path('home/', views.home),
+    
 ]
