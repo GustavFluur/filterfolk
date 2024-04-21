@@ -21,20 +21,18 @@ The sites primary audience will be people who are living in condominiums and req
 | **REGISTRATION & USER ACCOUNTS** |
 | 3 | Site User | Easily register for an account on Filter Folks| Enabling me to view my profile and order history |
 | 4 | Site User | Easily log in or out | Access my personal account information |
-| 5 | Site User | Easily recover my password in case I forget it | Recover access to my account |
-| 6 | Site User | Receive an email confirmation after registering | Verify that my account registration was successful |
-| 7 | Site User | Have a personalized user profile | View my personal order history and order confirmations, and save my payment information |
+| 6 | Site User | Have a personalized user profile | View my personal order history and order confirmations, and save my payment information |
 | **SORTING & SEARCHING** |
-| 8 | Shopper | Sort the list of available filters by price, rating, and category | To identify the best options for my needs. |
-| 9 | Shopper | Sort a specific category of Air Filter | Find the best-priced or best-rated product in a specific category, or sort the products in that category by name |
-| 11 | Shopper | Search for a product by name or description | Find a specific product I'd like to purchase |
-| 12 | Shopper | Easily see what I've searched for and the number of results | Quickly decide whether the product I want is available |
+| 7 | Shopper | Sort the list of available filters by price, rating, and category | To identify the best options for my needs. |
+| 8 | Shopper | Sort a specific category of Air Filter | Find the best-priced or best-rated product in a specific category, or sort the products in that category by name |
+| 9 | Shopper | Search for a product by name or description | Find a specific product I'd like to purchase |
+| 10 | Shopper | Easily see what I've searched for and the number of results | Quickly decide whether the product I want is available |
 | **PURCHASING & CHECKOUT** |
-| 13 | Shopper | Easily select the size and quantity of filters I wish to purchase | Ensuring I order the correct products |
-| 14 | Shopper | View  items in my shopping bag, adjust quantities if necessary | enter payment information securely for checkout. |
-| 18 | Shopper | View an order confirmation after checkout | Verify that I haven't made any mistakes |
-| 19 | Shopper | Receive an email confirmation after checking out | Keep the confirmation of what I've purchased for my records |
+| 11 | Shopper | Easily select the size and quantity of filters I wish to purchase | Ensuring I order the correct products |
+| 12 | Shopper | View  items in my shopping bag, adjust quantities if necessary | enter payment information securely for checkout. |
+| 13 | Shopper | View an order confirmation after checkout | Verify that I haven't made any mistakes |
+| 14 | Shopper | Receive an email confirmation after checking out | Keep the confirmation of what I've purchased for my records |
 | **ADMIN & STORE MANAGEMENT** |
-| 20 | Store Owner | Add a product| Add new items to my store |
-| 21 | Store Owner | Edit/update a product | Change product prices, descriptions, images and other product criteria |
-| 22 | Store Owner | Delete a product | Remove items that are no longer for sale |
+| 15 | Store Owner | Add a product| Add new items to my store |
+| 16 | Store Owner | Edit/update a product | Change product prices, descriptions, images and other product criteria |
+| 17 | Store Owner | Delete a product | Remove items that are no longer for sale |
