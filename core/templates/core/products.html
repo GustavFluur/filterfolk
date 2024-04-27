@@ -3,7 +3,7 @@
 {% block content %}
 <div class="container-fluid mt-5 px-4 col w-100">
 
-    <h2><span class="badge badge-primary">Our</span> Air Filters <i class="fas fa-cloud" style="color: #033e6b;"></i></h2>
+    <h2><span class="badge badge-primary">Our</span> Inventory</h2>
     <div class="bg-info mt-3 p-5 text-center">
 
         <div class="row">
@@ -29,24 +29,15 @@
         <hr>
         <div class="row text-white bg-dark ml-1 container-fluid">
 
-            <h2>Categories <i class="fas fa-wind" style="color: #74C0FC;"></i></h2>
+            <h2>Categories</h2>
             <hr>
             {% for category in categories %}
                     <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-3">
                         <div class="h-100">
                             <div>
                                 <a href="">
-                                    <div class="row">
-                                        <div class="col">
-
-                                            <h6 class="card-title mt-0 text-white">{{ category.name }}:</h6>
-                                        </div>
-                                        
-                                        <div class="col">
-
-                                            <p class="card-text text-warning">{{ category.products.count }}</p>
-                                        </div>
-                                    </div>
+                                    
+                                    <p class="card-title mt-0 text-warning">{{ category.name }}</p>
                                 </a>
                             </div>
                         </div>
