@@ -1,0 +1,43 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row justify-content-center mt-2">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+
+            <div class="col w-100">
+                <h1>Register</h1>
+                <p class="text-muted">Please create your <strong class="text-uppercase">Filter for Folks</strong> Profile</p>
+                <form action="" method="post">
+                    {% csrf_token %}
+                    {% if form.non_field_errors %}
+                    {% for error in form.non_field_errors %}
+                        {{ error }}
+                    {% endfor %}
+                {% endif %}
+        
+                {% for hidden in form.hidden_fields %}
+                    {{ hidden }}
+                {% endfor %}
+                
+                {% for field in form %}
+                <div class="text-danger">
+                    {{ field }}
+                    <div class="list-unstyled">
+                        {{ field.errors.as_ul }}
+                    </div>
+                </div>
+                {% endfor %}
+                    <button class="btn btn-info rounded-circle text-uppercase justify-content-center mt-4" type="submit">Register</button>
+                </form>
+
+            </div>
+            
+        </div>
+    </div> 
+</div>
+{% endblock %}
