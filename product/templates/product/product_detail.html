@@ -32,6 +32,20 @@
                     <div>
                         {{ product.description }}
                     </div>
+
+                    <div class="col-md-6 order-md-1 mt-5">
+
+                        <p>
+                            <a href="{% url 'products' %}" class="btn btn-outline-info btn-lg">
+                                <span>
+                                    <i class="far fa-hand-point-right"></i>
+                                </span>
+                                <span class="text-uppercase">Back to Inventory</span>
+                            </a>
+
+                        </p>
+
+                    </div>
                         
                     
                 {% endif %}
@@ -78,6 +92,7 @@
                             </a>
                         </div>
                     </div>
+  
             {% endfor %}
         </div>
      
