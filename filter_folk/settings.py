@@ -134,3 +134,10 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CSRF_COOKIE_SECURE = False
+
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://8000-gustavfluur-filterfolk-fee4757yq3l.ws-eu110.gitpod.io" ,
+    # "https://*.herokuapp.com" add this one later! 
+#
+]

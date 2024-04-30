@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from product.models import Category, Product
 
 from .forms import ProfileRegister
@@ -25,8 +25,16 @@ def contact(request):
 
 
 def register(request):
-    
-    form = ProfileRegister(request.POST)
+
+    if request.method == 'POST':
+        form = ProfileRegister(request.POST)
+
+        if form.is_valid():
+            form.save()
+
+            return redirect('/login/')
+    else:        
+        form = ProfileRegister()
 
 
     return render(request, 'core/register.html', {

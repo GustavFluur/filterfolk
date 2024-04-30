@@ -7,44 +7,53 @@
 {% block content %}
 <div class="container-fluid">
     <div class="row">
-        <div class="col w-100">
-            <div class="col">
+            <div class="col px-md-5">
                 <h1>Register</h1>
-                <p class="text-muted">Please sign up with us at <strong class="text-uppercase">Filter for Folks</strong></p>
-                <form action="" method="post">
-                    {% csrf_token %}
-            
-                    {% if form.non_field_errors %}
-                    
-                        {% for error in form.non_field_errors %}
-                            {{ error }}
-                        {% endfor %}
-
-                    {% endif %}
-        
-                {% for hidden in form.hidden_fields %}
-                    {{ hidden }}
-                {% endfor %}
+                <p class="text-muted">Please create your account with us at <strong class="text-uppercase">Filter for Folks!</strong></p>
+                    <form action="" method="post" class="mt-5">
+                        {% csrf_token %}
                 
-                <div class="text-danger list-unstyled">
-                    {% for field in form %}
-                    
-                        {{ field }}
-                        {{ field.errors.as_ul }}
-                    
+                        {% if form.non_field_errors %}
+
+                        
+                        {% for error in form.non_field_errors %}
+                                {{ error }}
+                            {% endfor %}
+
+                        {% endif %}
+            
+                    {% for hidden in form.hidden_fields %}
+                        {{ hidden }}
                     {% endfor %}
-                </div>
-                    <button class="btn btn-info rounded-circle text-uppercase justify-content-center mt-4" type="submit">Register</button>
+                    
+                    <div class="text-danger">
+                        <ul class="list-unstyled">
+                            <li>
+                                {% for field in form %}
+                        
+                                {{ field }}
+                                {{ field.errors.as_ul }}
+                            
+                                {% endfor %}
+
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="justify-content-end">
+                        <button class="btn btn-lg btn-info rounded-circle text-uppercase justify-content-center mt-4" type="submit">Submit</button>
+                    </div>
+                    
                 </form>
             </div>
 
-        </div>
-        <div class="col">
+        <div class="col px-md-5">
             <div class="rounded mx-auto d-block">
                 
                 <img src="https://images.pexels.com/photos/8815877/pexels-photo-8815877.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid" alt="Register">
             </div>
         </div>
+    </div>
 
 </div>
 {% endblock %}
