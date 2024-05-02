@@ -36,3 +36,13 @@ The sites primary audience will be people who are living in condominiums and req
 | 15 | Store Owner | Add a product| Add new items to my store |
 | 16 | Store Owner | Edit/update a product | Change product prices, descriptions, images and other product criteria |
 | 17 | Store Owner | Delete a product | Remove items that are no longer for sale |
+
+
+
+## Instructions if the workspace fails:
+
+##### Follow these steps: 
+
+- pip3 install 'django<4'
+- pip install django-crispy-forms
+- python -m pip install Pillow
