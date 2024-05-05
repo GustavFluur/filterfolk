@@ -3,7 +3,7 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
 
 
-class LoginForm(AuthenticationForm):
+class SignInForm(AuthenticationForm):
     username = forms.CharField(widget=forms.TextInput(attrs={
         'placeholder': 'Your Username',
     
@@ -12,6 +12,9 @@ class LoginForm(AuthenticationForm):
         'placeholder': 'Your Password',
     
     }))
+    
+
+
 
 class ProfileRegister(UserCreationForm):
     class Meta:
