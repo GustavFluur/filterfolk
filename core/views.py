@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from product.models import Category, Product
+from django.contrib import messages
 
 from .forms import ProfileRegister
 
@@ -32,7 +33,7 @@ def register(request):
         if form.is_valid():
             form.save()
 
-            return redirect('/login/')
+            return redirect('/signIn/')
     else:        
         form = ProfileRegister()
 

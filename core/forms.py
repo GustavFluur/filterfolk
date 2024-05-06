@@ -19,15 +19,24 @@ class SignInForm(AuthenticationForm):
 class ProfileRegister(UserCreationForm):
     class Meta:
         model = User
-        fields = ('username', 'email', 'password1', 'password2')
+        fields = ('firstname','lastname','username', 'email', 'password1', 'password2')
 
-    username = forms.CharField(widget=forms.TextInput(attrs={
-        'placeholder': 'Your username',
+    firstname = forms.CharField(widget=forms.TextInput(attrs={
+        'placeholder': 'Enter First Name',
+    
+    }))
+
+    lastname = forms.CharField(widget=forms.TextInput(attrs={
+        'placeholder': 'Enter Last Name',
     
     }))
     
     email = forms.CharField(widget=forms.EmailInput(attrs={
         'placeholder': 'Enter Email Address',
+    
+    }))
+    username = forms.CharField(widget=forms.TextInput(attrs={
+        'placeholder': 'Your username',
     
     }))
 
