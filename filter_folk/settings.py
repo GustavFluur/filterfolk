@@ -27,6 +27,17 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-gustavfluur-filterfolk-otngy4h7wg2.ws-eu111.gitpod.io']
 
+CSRF_TRUSTED_ORIGINS = [
+    "8000-gustavfluur-filterfolk-otngy4h7wg2.ws-eu111.gitpod.io",
+    # "https://*.herokuapp.com" add this one later! 
+#
+]
+
+
+LOGIN_URL = '/signIn/'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+
 
 # Application definition
 
@@ -136,8 +147,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CSRF_COOKIE_SECURE = False
 
 
-CSRF_TRUSTED_ORIGINS = [
-    "https://8000-gustavfluur-filterfolk-fee4757yq3l.ws-eu110.gitpod.io" ,
-    # "https://*.herokuapp.com" add this one later! 
-#
-]
+
