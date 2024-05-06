@@ -27,16 +27,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-gustavfluur-filterfolk-otngy4h7wg2.ws-eu111.gitpod.io']
 
-CSRF_TRUSTED_ORIGINS = [
-    "8000-gustavfluur-filterfolk-otngy4h7wg2.ws-eu111.gitpod.io",
-    # "https://*.herokuapp.com" add this one later! 
-#
-]
-
-
 LOGIN_URL = '/signIn/'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+CSRF_TRUSTED_ORIGINS = [
+"https://*.gitpod.io",
+"https://*.herokuapp.com"
+]
 
 
 # Application definition
