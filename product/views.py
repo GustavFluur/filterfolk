@@ -1,8 +1,7 @@
-from django.shortcuts import render
-
-# Create your views here.
+from django.contrib.auth.decorators import login_required 
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Product
+from .forms import AddNewProductForm
 
 
 def product_detail(request, pk):
@@ -13,3 +12,15 @@ def product_detail(request, pk):
         'product': product,
         'related_products': related_products
     })
+
+
+
+@login_required 
+def add_new_product(request):
+     form = AddNewProductForm()
+
+     return render(request, 'product/product_form.html',{
+        'form': form,
+        'title': 'New Product',
+
+     })
