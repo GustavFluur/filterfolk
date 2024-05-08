@@ -5,15 +5,17 @@
 
 {% block content %}
 <div class="container-fluid">
-    <div class="row justify-content-center mt-2">
+    <div class="row justify-content-center mt-1">
         <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4">
 
-            <h1 class="">{{ title }}</h1>
+
+            <h1 class="font-weight-bold">{{ title }}</h1>
+            <img src="https://images.pexels.com/photos/6829535/pexels-photo-6829535.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid rounded" alt="Add new product">
 
             <form method="post" action="." enctype="multipart/form-data">
                 {% csrf_token %}
 
-                <div>
+                <div class="mt-4">
                     {{ form.as_p}}
                 </div>
                 {% if form.errors or form.non_field_errors %}
@@ -26,10 +28,18 @@
                     </div>
                 {% endif %}
 
-                <button class="btn-outline-success rounded-circle text-uppercase  mt-6" type="submit">Add Product</button>
+
+                    <div class="col-md-6 order-md-2">
+
+                        <button class="btn-outline-success rounded-circle text-uppercase  mt-5" type="submit">Add Product</button>
+                    </div>
+
             </form>
+            
         </div>
+        
     </div>
+    
 </div>
 
 {% endblock %}

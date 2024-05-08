@@ -21,6 +21,6 @@ def add_new_product(request):
 
      return render(request, 'product/product_form.html',{
         'form': form,
-        'title': 'New Product',
+        'title': 'Add New Product',
 
      })
