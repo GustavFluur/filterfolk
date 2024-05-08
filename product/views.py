@@ -1,5 +1,5 @@
 from django.contrib.auth.decorators import login_required 
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, reverse, get_object_or_404, redirect
 from .models import Product
 from .forms import AddNewProductForm
 
@@ -40,4 +40,4 @@ def delete_product(request, pk):
     product = get_object_or_404(Product, pk=pk)
     product.delete()
 
-    return redirect('home')
+    return redirect(reverse('products')) # Use reverse to get back to the products page
