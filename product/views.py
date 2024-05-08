@@ -17,10 +17,19 @@ def product_detail(request, pk):
 
 @login_required 
 def add_new_product(request):
-     form = AddNewProductForm()
+        if request.method == 'POST':
+            form = AddNewProductForm(request.POST, request.FILES)
+            
+            if form.is_valid():
+                product = form.save(commit=False) #for creating a new product without saving into DB
+                product.save()
 
-     return render(request, 'product/product_form.html',{
-        'form': form,
-        'title': 'Add New Product',
+                return redirect('product:product_detail', pk=product.id)
+        else:
+            form = AddNewProductForm()
 
-     })
+        return render(request, 'product/product_form.html',{
+            'form': form,
+            'title': 'Add New Product',
+
+        })
