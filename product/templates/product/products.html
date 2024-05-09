@@ -10,7 +10,7 @@
         <br>
         <div class="col-4 bg-secondary">
             <form method="get" action="#" class="mt-2">
-                <input name="query" class="form-control" placeholder="Find a merchandise of your choice...." aria-label="Find a merchandise of your choice...." aria-describedby="basic-addon2" type="text" value="{{ query }}">
+                <input name="query" class="form-control" placeholder="Find a product of your choice...." aria-label="Find a product of your choice...." aria-describedby="basic-addon2" type="text" value="{{ query }}">
                 <button type="submit" class="mt-2 p-3 bg-success">Search</button>
             </form>
             <hr>
@@ -18,7 +18,7 @@
             <ul class="list-unstyled">
                 {% for category in categories %}
                 <li class="p-2 mb-2 rounded bg-light {% if category.id == category_id %} bg-primary {% endif %}">
-                    <a href="#">{{ category.name }}</a>
+                    <a href="{% url 'product:search' %}?query={{ query }}&category={{ category.id }}">{{ category.name }}</a>
                 </li>
                 {% endfor %}
             </ul>
@@ -26,7 +26,7 @@
             <p class="text-warning">Clear Filter</p>
             <ul class="list-unstyled">
                 <li>
-                    <a href="{% url 'product:products' %}" class="mt-2 p-3 text-uppercase bg-danger" type="submit"><p class="text-dark">reset</p></a>
+                    <a href="{% url 'product:search' %}" class="mt-2 p-3 text-uppercase bg-danger" type="submit"><p class="text-dark">Default Search</p></a>
                 </li>
             </ul>
 
