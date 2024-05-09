@@ -25,9 +25,9 @@
                         <div class="col-6 col-sm-3"><a href="{% url 'product:search' %}" class="btn btn-outline-info text-uppercase">Search Product <i class="fas fa-search"></i></a></div>
                     {% if request.user == True %}
                         <div class="col-6 col-sm-3"><a href="{% url 'core:register' %}" class="btn btn-outline-secondary text-uppercase">Register<i class="fas fa-hand-pointer"></i></a></div>
-                    {% endif %}
+                    {% else %}
                         <div class="col-6 col-sm-3"><a href="{% url 'core:signIn' %}" class="btn btn-outline-warning text-dark text-uppercase">Sign In <i class="fas fa-sign-in-alt"></i></a></div>
-                        
+                    {% endif %}     
                         
                 </div>
         </nav>
