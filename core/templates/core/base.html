@@ -19,30 +19,14 @@
                 </button>
                 <hr>
                 <div class="row align-items-center">
-                        <div class="col-6 col-sm-3"><a href="{% url 'product:add_new_product' %}" class="btn btn-outline-success btn-block"> New Product <i class="fas fa-plus-circle"></i></a></div>
-                        <div class="col-6 col-sm-3">
-                            <a href="#" class="btn btn-outline-info btn-block">
-                                Search <i class="fas fa-search"></i>
-                            </a>
-                        </div>
-                        {% comment %}
-                        <!--{% if request.user.is_authenticated %}------>
-                        <div class="col-6 col-sm-3">
-                            <a href="#" class="btn btn-outline-secondary btn-block">
-                                Inbox
-                            </a>
-                        </div>
-                        <div class="col-6 col-sm-3">
-                            <a href="#" class="btn btn-outline-warning text-dark btn-block">
-                                Dashboard
-                            </a>
-                        </div>
-                        <!--{% else %}--->
-                        <!--{% endif %}-->
-                        {% endcomment %}
-                        
-                        <div class="col-6 col-sm-3"><a href="{% url 'core:register' %}" class="btn btn-outline-secondary btn-block">Register<i class="fas fa-hand-pointer"></i></a></div>
-                        <div class="col-6 col-sm-3"><a href="{% url 'core:signIn' %}" class="btn btn-outline-warning text-dark btn-block">Sign In <i class="fas fa-sign-in-alt"></i></a></div>
+                    {% if request.user.is_superuser == True %}
+                        <div class="col-6 col-sm-3"><a href="{% url 'product:add_new_product' %}" class="btn btn-outline-success">New Product<i class="fas fa-plus-circle"></i></a></div>
+                    {% endif %}    
+                        <div class="col-6 col-sm-3"><a href="#" class="btn btn-outline-info">Search <i class="fas fa-search"></i></a></div>
+                        {% if request.user == True %}
+                        <div class="col-6 col-sm-3"><a href="{% url 'core:register' %}" class="btn btn-outline-secondary">Register<i class="fas fa-hand-pointer"></i></a></div>
+                        {% endif %}
+                        <div class="col-6 col-sm-3"><a href="{% url 'core:signIn' %}" class="btn btn-outline-warning text-dark">Sign In <i class="fas fa-sign-in-alt"></i></a></div>
                         
                         
                 </div>
