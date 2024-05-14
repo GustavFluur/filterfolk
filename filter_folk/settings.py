@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-gustavfluur-filterfolk-otngy4h7wg2.ws-eu111.gitpod.io']
 
-LOGIN_URL = '/accounts/login'
+LOGIN_URL = '/'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
