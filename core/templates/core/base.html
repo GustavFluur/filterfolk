@@ -23,24 +23,20 @@
                     <ul class="navbar-nav mr-auto">
                     
                     {% if request.user.is_superuser == True %}
+                    
                         <li class="navbar-item"><a href="{% url 'product:add_new_product' %}" class="btn btn-outline-success text-uppercase">Add Product <i class="fas fa-plus-circle"></i></a></li>
-                        <li class="navbar-item"><a href="{% url 'account_logout' %}" class="btn btn-outline-warning text-dark text-uppercase">Log Out <i class="fas fa-sign-in-alt"></i></a></li>
                     {% endif %}
-
-                    
-                    {% if request.user.is_authenticated %}    
-               
-    
-                        <li class="navbar-item"><a href="{% url 'account_login' %}" class="btn btn-outline-warning text-dark text-uppercase">Sign In <i class="fas fa-sign-in-alt"></i></a></li>
+                    {% if request.user.is_authenticated %}
+                        <li class="navbar-item"><a href="{% url 'product:search' %}" class="btn btn-outline-info text-uppercase">Search Product <i class="fas fa-search"></i></a></li>    
                         <li class="navbar-item"><a href="{% url 'account_logout' %}" class="btn btn-outline-warning text-dark text-uppercase">Log Out <i class="fas fa-sign-in-alt"></i></a></li>
+                                           
                     {% else %}
-                        <li class="navbar-item"><a href="{% url 'product:search' %}" class="btn btn-outline-info text-uppercase">Search Product <i class="fas fa-search"></i></a></li>
-                        <br>
+                        <li class="navbar-item"><a href="{% url 'product:search' %}" class="btn btn-outline-info text-uppercase">Search Product <i class="fas fa-search"></i></a></li> 
+                        <li class="navbar-item"><a href="{% url 'account_signup' %}" class="btn btn-outline-secondary text-uppercase">Register<i class="fas fa-hand-pointer"></i></a></li> 
+                        <li class="navbar-item"><a href="{% url 'account_login' %}" class="btn btn-outline-warning text-dark text-uppercase">Sign In <i class="fas fa-sign-in-alt"></i></a></li>    
+                    {% endif %}
                     
-                        <li class="navbar-item"><a href="{% url 'account_signup' %}" class="btn btn-outline-secondary text-uppercase">Register<i class="fas fa-hand-pointer"></i></a></li>
-                   
-                    
-                    {% endif %}     
+
                     </ul>    
                 </div>
 
