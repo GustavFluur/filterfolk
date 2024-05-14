@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-gustavfluur-filterfolk-otngy4h7wg2.ws-eu111.gitpod.io']
 
-LOGIN_URL = '/'
+LOGIN_URL = '/home'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
@@ -36,6 +36,9 @@ CSRF_TRUSTED_ORIGINS = [
 "https://*.gitpod.io",
 "https://*.herokuapp.com"
 ]
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+ACCOUNT_EMAIL_VERIFICATION = "none"
 
 
 # Application definition

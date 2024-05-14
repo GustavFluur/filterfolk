@@ -22,6 +22,7 @@ from core.views import contact, home
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
+    path('', home, name='home'), 
     path('',include('core.urls')),
     path('product/', include('product.urls')),
     
