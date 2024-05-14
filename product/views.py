@@ -5,6 +5,18 @@ from .models import Product, Category
 from .forms import AddNewProductForm, EditProductForm
 
 
+def products_list(request):
+    products = Product.objects.filter()
+    for product in products:
+        product.price = round(product.price)
+    categories = Category.objects.all()
+    
+    return render(request, 'product/inventory.html', {
+        'categories': categories,
+        'products': products, 
+
+    })
+
 def search_products(request):
     query = request.GET.get('query', '')
     category_id = request.GET.get('category', 0)
