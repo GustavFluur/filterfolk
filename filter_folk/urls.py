@@ -21,6 +21,7 @@ from core.views import products_list, contact, home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('accounts/', include('allauth.urls')),
     path('',include('core.urls')),
     path('products/', products_list, name='products'),
     path('product/', include('product.urls')),
