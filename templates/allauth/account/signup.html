@@ -5,17 +5,27 @@
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
 {% block content %}
-<h1>{% trans "Sign Up" %}</h1>
+<div class="container-fluid">
+  <div class="row justify-content-center mt-2">
+      <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
 
-<p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+        <h1>{% trans "Register your profile" %}</h1>
 
-<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-  {% csrf_token %}
-  {{ form.as_p }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <button type="submit">{% trans "Sign Up" %} &raquo;</button>
-</form>
+        <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
 
+        <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+          {% csrf_token %}
+          {{ form.as_p }}
+          {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+          {% endif %}
+          <button class="btn btn-info rounded-circle text-uppercase justify-content-end mt-4" type="submit">{% trans "Sign Up" %} &raquo;</button>
+        </form>
+      </div>
+      <div class="rounded mx-auto d-block">
+                
+        <img src="https://images.pexels.com/photos/8815877/pexels-photo-8815877.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid" alt="Register">
+    </div>
+  </div>
+</div>
 {% endblock %}

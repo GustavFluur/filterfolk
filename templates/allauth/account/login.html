@@ -5,44 +5,55 @@
     {% trans "Sign In" %}
 {% endblock head_title %}
 {% block content %}
-    {% element h1 %}
-        {% trans "Sign In" %}
-    {% endelement %}
-    {% if not SOCIALACCOUNT_ONLY %}
-        {% setvar link %}
-            <a href="{{ signup_url }}">
-            {% endsetvar %}
-            {% setvar end_link %}
-            </a>
-        {% endsetvar %}
-        <p>
-            {% blocktranslate %}If you have not created an account yet, then please {{ link }}sign up{{ end_link }} first.{% endblocktranslate %}
-        </p>
-        {% url 'account_login' as login_url %}
-        {% element form form=form method="post" action=login_url tags="entrance,login" %}
-            {% slot body %}
-                {% csrf_token %}
-                {% element fields form=form unlabeled=True %}
-                {% endelement %}
-                {{ redirect_field }}
-            {% endslot %}
-            {% slot actions %}
-                {% element button type="submit" tags="prominent,login" %}
-                    {% trans "Sign In" %}
-                {% endelement %}
-            {% endslot %}
-        {% endelement %}
-    {% endif %}
-    {% if LOGIN_BY_CODE_ENABLED %}
-        {% element hr %}
-        {% endelement %}
-        {% element h2 %}
-            {% element button href=request_login_code_url tags="prominent,login,secondary" %}
-                {% trans "Mail me a sign-in code" %}
+
+<div class="container-fluid">
+    <div class="row justify-content-center mt-2">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+            {% element h1 %}
+                {% trans "Sign In" %}
             {% endelement %}
-        {% endelement %}
-    {% endif %}
-    {% if SOCIALACCOUNT_ENABLED %}
-        {% include "socialaccount/snippets/login.html" with page_layout="entrance" %}
-    {% endif %}
+            {% if not SOCIALACCOUNT_ONLY %}
+                {% setvar link %}
+                    <a href="{{ signup_url }}">
+                    {% endsetvar %}
+                    {% setvar end_link %}
+                    </a>
+                {% endsetvar %}
+                <p>
+                    {% blocktranslate %}If you have not created an account yet, then please {{ link }}sign up{{ end_link }} first.{% endblocktranslate %}
+                </p>
+                {% url 'account_login' as login_url %}
+                {% element form form=form method="post" action=login_url tags="entrance,login" %}
+                    {% slot body %}
+                        {% csrf_token %}
+                        {% element fields form=form unlabeled=True %}
+                        {% endelement %}
+                        {{ redirect_field }}
+                    {% endslot %}
+                    {% slot actions %}
+                 
+                        <button class="btn btn-info rounded-circle text-uppercase justify-content-end mt-4">
+                            {% trans "Sign In" %}
+                        </button>
+
+                    {% endslot %}
+                {% endelement %}
+            {% endif %}
+            {% if LOGIN_BY_CODE_ENABLED %}
+                {% element hr %}
+                {% endelement %}
+                {% element h2 %}
+                    {% element button href=request_login_code_url tags="prominent,login,secondary" %}
+                        {% trans "Mail me a sign-in code" %}
+                    {% endelement %}
+                {% endelement %}
+            {% endif %}
+            {% if SOCIALACCOUNT_ENABLED %}
+                {% include "socialaccount/snippets/login.html" with page_layout="entrance" %}
+            {% endif %}
+        </div>
+        <img src="https://images.unsplash.com/photo-1525011268546-bf3f9b007f6a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fFNpZ24lMjBpbnxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid rounded" alt="Sign In">
+    </div>
+</div>
+
 {% endblock content %}
