@@ -73,7 +73,7 @@
         <div class="container-fluid">
             <h2><span class="badge badge-primary">Related</span> products: </h2>
             <div class="row">
-                {% for product in related_products %}
+                {% if product in related_products %}
                 
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100">
@@ -92,7 +92,7 @@
                             </div>
                         </div>
     
-                {% endfor %}
+                {% endif %}
             </div>
         </div>
      
