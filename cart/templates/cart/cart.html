@@ -1,0 +1,62 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% load bag_tools %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+<body>
+
+    <div class="container-fluid mt-5 text-center">
+
+        <div class="row">
+
+            <div class="col-md-6 order-md-2 text-info">
+                {% if request.user.is_authenticated %}
+                    <h1>Welcome {{ request.user.username }} to Filter for Folks</h1>
+
+                    <ul>
+                        <li class="list-unstyled">
+                            <p>We're here to assist you with the best air ventilation</p>
+                        </li>
+                    </ul>
+                {% else %}
+                <h1>Shopping Cart </h1>
+
+                <ul>
+                    <li class="list-unstyled">
+                        <p>We're here to assist you with the best air ventilation</p>
+                    </li>
+                </ul>
+                {% endif %}
+
+            </div>
+        </div>
+        <div class="col-md-6 order-md-1">
+
+            <img src="https://images.pexels.com/photos/54300/pexels-photo-54300.jpeg?auto=compress&cs=tinysrgb&w=600" alt="wind">
+        </div>
+
+        <div class="row justify-content-end">
+            <div class="col-md-6 order-md-1">
+
+                <a href="{% url 'product:inventory' %}" class="btn btn-outline-info btn-lg">
+                    <span>
+                        <i class="far fa-hand-point-right"></i>
+                    </span>
+                    <span class="text-uppercase">Our Inventory</span>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+{% endblock %}

@@ -28,7 +28,20 @@
                     {% endif %}
                     {% if request.user.is_authenticated %}
                         <li class="navbar-item"><a href="{% url 'product:search' %}" class="btn btn-outline-info text-uppercase">Search Product <i class="fas fa-search"></i></a></li>    
-                        <li class="navbar-item"><a href="#" class="btn btn-outline-primary text-dark text-uppercase">Cart<i class="fas fa-cart-arrow-down"></i></a></li>  
+                        <li class="navbar-item">
+                            <a href="{% url 'view_cart' %}" class=" btn btn-outline-primary text-uppercase {% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link">
+                                <div class="text-center">
+                                    <div><i class="fas fa-cart-arrow-down fa-lg"></i></div>
+                                    <p class="my-0">
+                                        {% if grand_total %}
+                                            ${{ grand_total|floatformat:2 }}
+                                        {% else %}
+                                            $0.00
+                                        {% endif %}
+                                    </p>
+                                </div>
+                            </a>
+                        </li> 
                         <li class="navbar-item"><a href="{% url 'account_logout' %}" class="btn btn-outline-warning text-dark text-uppercase">Log Out <i class="fas fa-sign-in-alt"></i></a></li>
                                           
                     {% else %}
