@@ -28,8 +28,8 @@
                     {% endif %}
                     {% if request.user.is_authenticated %}
                     {% if request.user.is_superuser == False %}
-                        <li class="list-inline-item">
-                            <a href="{% url 'view_cart' %}" class="{% if grand_total %}text-primary font-weight-bold{% else %}text-primary{% endif %} nav-link">
+                        <li class="navbar-item">
+                            <a href="{% url 'view_cart' %}" class=" btn btn-outline {% if grand_total %}text-primary font-weight-bold{% else %}text-primary{% endif %} nav-link">
                                 <div class="text-center">
                                     <div><i class="fas fa-cart-arrow-down fa-lg"></i></div>
                                     <p class="my-0">
