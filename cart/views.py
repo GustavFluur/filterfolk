@@ -6,13 +6,13 @@ from django.contrib import messages
 
 
 
-def view_cart(request):
+def cart_total(request):
 
-    return render(request, 'cart/cart.html')
+    return render(request, 'cart/cart.html', {})
 
 
 
-def add_cart(request, item_id):
+def add_cart(request, product_id):
     cart = Cart(request)
 	# test for POST
 	

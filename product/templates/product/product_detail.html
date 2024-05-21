@@ -38,15 +38,23 @@
                         <div class="row">
 
                             <div class="col-sm">
-                                <p>
-                                    <a href="#" type= "button" value= "{{ product.id }}" id = "add-product" class="btn btn-outline-success btn-md">
-                                        <span>
-                                            <i class="fas fa-cart-plus"></i>
-                                        </span>
-                                        <span class="text-uppercase">Add to Cart</span>
-                                    </a>
 
-                                </p>
+                                <!----Change here ------>
+                                <form action="{% url 'add_cart' product.id %}" method="POST" class="form">
+                                    <p>
+                                        
+                                        <button type="button" value="{{ product.id }}" id="add-cart" class="btn btn-outline-success btn-md">
+                                            
+                                            <span>
+                                                <i class="fas fa-cart-plus"></i>
+                                            </span>
+                                            <span class="text-uppercase">Add to Cart</span>
+                                        </button>
+
+                                    
+
+                                    </p>
+                                </form>
                             </div>
                     {% endif %} 
                             <div class="col-sm">
@@ -130,40 +138,5 @@
 
 </div>
 
-<script>
-    // Check if button pressed
-    $(document).on('click', '#add-product', function(e){
-        e.preventDefault();
-        $.ajax({
-            type: 'POST',
-            url: '{% url "add_cart" %}',
-            data: {
-        product_id: $('#add-product').val(),
-        product_qty: $('#qty-cart option:selected').text(),
-        csrfmiddlewaretoken: '{{ csrf_token }}',
-        action: 'post'
-            },
-    
-            success: function(json){
-                //console.log(json)
-                document.getElementById("cart_quantity").textContent = json.qty
-                location.reload();
-            },
-    
-            error: function(xhr, errmsg, err){
-    
-            }
-    
-    
-        });
-    
-    
-    
-    })
-    
-    
-    
-    
-    </script>
 
 {% endblock %}
