@@ -46,7 +46,7 @@
                                             {% csrf_token %}
                                             <div class="form-group">
                                                 <div class="input-group">
-
+                                                         
                                                     <div class="input-group-prepend">
                                                         <button class="decrement-qty btn btn-sm btn-black rounded-0" 
                                                             data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
@@ -130,6 +130,9 @@
         {% include 'product/includes/quantity_input_script.html' %}
 
         <script type="text/javascript">
+
+            console.log("Hello")
+
             // Update quantity on click
             $('.update-link').click(function(e) {
                 var form = $(this).prev('.update-form');
