@@ -39,16 +39,17 @@ def update_cart(request, item_id):
 
 
 def delete_cart(request, item_id):
+    if request.method == "POST":
+        try:
+            cart = request.session.get('cart', {})
+            product = get_object_or_404(Product, pk=item_id)
+            cart.pop(item_id)
+            messages.success(request, f'Removed {product.name} from your cart')
 
-    try:
-        product = get_object_or_404(Product, pk=item_id)
-        cart.pop(item_id)
-        messages.success(request, f'Removed {product.name} from your cart')
+            request.session['cart'] = cart
+            return HttpResponse(status=200)
 
-        request.session['cart'] = bag
-        return HttpResponse(status=200)
-
-    except Exception as e:
-        messages.error(request, f'Error removing item: {e}')
-        return HttpResponse(status=500)
+        except Exception as e:
+            messages.error(request, f'Error removing item: {e}')
+            return HttpResponse(status=500)
 
