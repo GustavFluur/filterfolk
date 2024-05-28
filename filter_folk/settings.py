@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'core',
     'product',
     'cart',
+    'checkout',
 
     'crispy_forms',
 ]
@@ -166,5 +167,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CSRF_COOKIE_SECURE = False
 
 
-FREE_DELIVERY_THRESHOLD = 50
+FREE_DELIVERY_THRESHOLD = 80
 STANDARD_DELIVERY_PERCENTAGE = 10
