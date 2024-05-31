@@ -9,6 +9,8 @@
 
 var stripePublicKey = $('#id_stripe_public_key').text().slice(1, -1);
 var clientSecret = $('#id_client_secret').text().slice(1, -1);
+console.log('stripePublicKey', stripePublicKey)
+console.log('clientSecret', clientSecret)
 var stripe = Stripe(stripePublicKey);
 var elements = stripe.elements();
 
@@ -49,9 +51,11 @@ card.addEventListener('change', function (event) {
 
 
 var form = document.getElementById('payment-form');
+console.log('form', form)
 
 form.addEventListener('submit', function(ev) {
     ev.preventDefault();
+    console.log('submitting to stripe')
     card.update({ 'disabled': true});
     $('#submit-button').attr('disabled', true);
     $('#payment-form').fadeToggle(100);
@@ -98,6 +102,7 @@ form.addEventListener('submit', function(ev) {
             },
         }).then(function(result) {
             if (result.error) {
+                console.log('error', error);
                 var errorDiv = document.getElementById('card-errors');
                 var html = `
                     <span class="icon" role="alert">
@@ -116,7 +121,8 @@ form.addEventListener('submit', function(ev) {
             }
         });
     }).fail(function () {
+        console.log('stripe call failed')
         // Just reload the page, the error will be in django messages
-        location.reload();
+        //location.reload();
     });
 });
