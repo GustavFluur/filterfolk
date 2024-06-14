@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-mw0i%wn=81&jf2sj_&gep4n(*y$1(ae!+=9x^nph$7y$q(1+!!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-gustavfluur-filterfolk-otngy4h7wg2.ws-eu114.gitpod.io']
+ALLOWED_HOSTS = ['8000-gustavfluur-filterfolk-25mzj01s6md.ws.codeinstitute-ide.net']
 
 LOGIN_URL = '/home'
 LOGIN_REDIRECT_URL = '/'
