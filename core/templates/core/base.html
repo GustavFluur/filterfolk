@@ -30,22 +30,23 @@
                     {% if request.user.is_authenticated %}
                     {% if request.user.is_superuser == False %}
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'cart_total' %}">
+                        <a class="btn btn-outline-secondary text-uppercase {% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'cart_total' %}">
                             <div class="text-center">
-                                <div><i class="fas fa-shopping-cart fa-lg"></i></div>
-                                <p class="my-0">
-                                    {% if grand_total %}
-                                        ${{ grand_total|floatformat:2 }}
-                                    {% else %}
-                                        $0.00
-                                    {% endif %}
-                                </p>
+                                <div><i class="fas fa-shopping-cart fa-lg"></i>
+                                    <p class="my-0">
+                                        {% if grand_total %}
+                                            ${{ grand_total|floatformat:2 }}
+                                        {% else %}
+                                            $0.00
+                                        {% endif %}
+                                    </p>
+                                </div>
                             </div>
                         </a>
                     </li>
                         {% endif %} 
                         <li class="navbar-item"><a href="{% url 'product:search' %}" class="btn btn-outline-info text-uppercase">Search Product <i class="fas fa-search"></i></a></li>    
-                        
+                        <li class="navbar-item"><a href="{% url 'account' %}" class="btn btn-outline-secondary text-uppercase">My Profile<i class="far fa-user-circle"></i></a></li> 
                         <li class="navbar-item"><a href="{% url 'account_logout' %}" class="btn btn-outline-warning text-dark text-uppercase">Log Out <i class="fas fa-sign-in-alt"></i></a></li>
                                           
                     {% else %}
