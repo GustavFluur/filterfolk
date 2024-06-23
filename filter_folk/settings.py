@@ -178,3 +178,4 @@ STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '') # Has been added into environment variables related to the project
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')# 
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+DEFAULT_FROM_EMAIL = 'filterforfolks@example.com'

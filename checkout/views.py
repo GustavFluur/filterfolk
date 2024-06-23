@@ -125,7 +125,7 @@ def checkout(request):
                     'town_or_city': account.default_town_or_city,
                     'street_address1': account.default_street_address1,
                     'street_address2': account.default_street_address2,
-                    'county': account.default_county,
+
                 })
             except UserAccount.DoesNotExist:
                 order_form = OrderForm()
