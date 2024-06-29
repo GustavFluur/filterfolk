@@ -12,9 +12,9 @@ The sites primary audience will be people who are living in condominiums and req
 
 ### Disclaimer
 
-This project is based upon Stockholm based company I worked for: [Folkfilter](https://www.folkfilter.se/). 
+This project was inspired by the Stockholm based company [Folkfilter](https://www.folkfilter.se/) that I used to work for as an account manager. It gave me the understanding related to the target audience and daily challenges I faced during my employment. I was also taken a break from this course at Code Institute before I worked on Filter for Folks.  
 
-With this message I want to show them my gratitude that I was allowed to use their product images into my website. Other product images was taken through google search and from  another Swedish company calls [Biltema](https://www.biltema.se/) 
+With this message I want to show them my gratitude that I was allowed to use their product images into my website. Other product images was taken through a google search and from another Swedish company calls [Biltema](https://www.biltema.se/). 
 
 
 ### User Stories
