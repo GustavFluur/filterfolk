@@ -40,7 +40,56 @@ The sites primary audience will be people who are living in condominiums and req
 
 ---
 
-## Design
+## Technologies Used
+
+### Languages Used
+
+HTML, CSS, JavaScript, Python 3
+
+### Databases Used
+
+* sqlite3 - for the development database.
+* ~~ElephantSQL - For the deployed sites database.~~ - ElephantSQL announced EOL for its service in February 2024.
+* [CI DB](https://dbs.ci-dbs.net/) For the deployed site database
+
+### Frameworks Used
+
+* [Django](https://www.djangoproject.com/) - A high-level Python web framework that encourages rapid development and clean, pragmatic design.
+
+* [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - Version 4.6 - A framework for building responsive, mobile-first sites.
+
+### Libraries & Packages Used
+
+* [Django Allauth](https://django-allauth.readthedocs.io/en/latest/)  - Used for authentication, registration & account management.
+
+* [dj_database_url](https://pypi.org/project/dj-database-url/0.5.0/) - Allows us to utilise the DATABASE_URL environment variable.
+
+* [Stripe](https://pypi.org/project/stripe/) - Version 9.11.0 - To allow us to utilise the Stripe API for payments.
+
+* [gunicorn](https://pypi.org/project/gunicorn/) - Version 22.0.0 - a Python WSGI HTTP Server
+
+* [psycopg2](https://pypi.org/project/psycopg2/) - A postgres database adaptor.
+
+* [pillow](https://pypi.org/project/Pillow/)  - A python imaging library.
+
+* asgiref
+
+* [django-countries](https://pypi.org/project/django-countries/7.6.1/) - This is the latest stable version that is compatible with GitPod
+
+* [django-crispy-forms](https://pypi.org/project/django-crispy-forms/) - provides a tag and filter that lets you quickly render forms
+
+* oauthlib
+
+* pytz
+
+* requests-oauthlib
+
+* sqlparse
+
+* psycopg2 - a postgres database adapter which allow us to connect with a postgres database
+
+* django-storages - a storage backend library
+
 
 ## Instructions if the workspace fails:
 
