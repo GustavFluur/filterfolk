@@ -10,6 +10,12 @@ The sites primary audience will be people who are living in condominiums and req
 - Offer clear product descriptions, pricing, and sizing options to aid in informed decision-making.
 - Enable easy management of products and orders for efficient store operations.
 
+### Disclaimer
+
+This project is based upon Stockholm based company I worked for: [Folkfilter](https://www.folkfilter.se/). 
+
+With this message I want to show them my gratitude that I was allowed to use their product images into my website. Other product images was taken through google search and from  another Swedish company calls [Biltema](https://www.biltema.se/) 
+
 
 ### User Stories
 
@@ -36,6 +42,19 @@ The sites primary audience will be people who are living in condominiums and req
 | 15 | Store Owner | Add a product| Add new items to my store |
 | 16 | Store Owner | Edit/update a product | Change product prices, descriptions, images and other product criteria |
 | 17 | Store Owner | Delete a product | Remove items that are no longer for sale |
+
+---
+
+## Design
+
+### Colour Scheme
+
+As the primary focus of the site is on the products for sale, the site uses a very small colour palette.
+
+### Typography
+
+
+### Imagery
 
 
 ---
