@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /cart/
+Disallow: /accounts/signup/
+Disallow: /accounts/login/
+Sitemap: https://filter-for-folks-58441ed4952a.herokuapp.com/sitemap.xml
+
