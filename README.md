@@ -38,6 +38,9 @@ The sites primary audience will be people who are living in condominiums and req
 | 17 | Store Owner | Delete a product | Remove items that are no longer for sale |
 
 
+---
+
+## Design
 
 ## Instructions if the workspace fails:
 
