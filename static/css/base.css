@@ -8,15 +8,13 @@ ul {
   }
 
 body {
-    
+
+    height: 100%;
 }
 
 .btt-link,
 .update-link,
 .remove-item {
     cursor: pointer;
-}
-
-.social-networks, ul {
 
 }
