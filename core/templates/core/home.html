@@ -18,11 +18,15 @@
 
             <div class="col-md-6 order-md-2 text-info">
                 {% if request.user.is_authenticated %}
-                    <h1>Welcome {{ request.user.username }} to Filter for Folks</h1>
+                    <h1 id="welcome">Welcome {{ request.user.username }} to Filter for Folks</h1>
 
                     <ul>
                         <li class="list-unstyled">
-                            <p>We're here to assist you with the best air ventilation</p>
+                            <p>
+                                <strong>
+                                    We're here to assist you with the best air ventilation
+                                </strong>
+                            </p>
                         </li>
                     </ul>
                 {% else %}
@@ -58,5 +62,6 @@
     </div>
 
 </body>
+
 </html>
 {% endblock %}
