@@ -64,10 +64,10 @@ As the primary focus of the site is on the products for sale, the site uses a ve
 
 - To prevent any restraints I have  included some screenshots of the Facebook page in my documentation. 
 
-[Facebook 1](assets/images/FACEBOOK/Facebook%201.png)
-[Facebook 2](assets/images/FACEBOOK/Facebook%202.png)
-[Facebook 3](assets/images/FACEBOOK/Facebook%203.png)
-[Facebook 4](assets/images/FACEBOOK/Facebook%204.png)
+![Facebook 1](assets/images/FACEBOOK/Facebook%201.png)
+![Facebook 2](assets/images/FACEBOOK/Facebook%202.png)
+![Facebook 3](assets/images/FACEBOOK/Facebook%203.png)
+![Facebook 4](assets/images/FACEBOOK/Facebook%204.png)
 
 
 ---
