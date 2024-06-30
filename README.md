@@ -60,9 +60,9 @@ As the primary focus of the site is on the products for sale, the site uses a ve
 
 ### Facebook page 
 
-- Facebook does not tolerate "fake" business profiles on its platform, so there's a risk that your business page might be deactivated if     it's not deemed authentic, particularly if it was created using a new, empty Facebook user profile.
+- Facebook does not tolerate "fake" business profiles on its platform, so there's a risk that my business page might be deactivated if it's not deemed authentic, particularly if it was created using a new, empty Facebook user profile.
 
-- To prevent any restraints I have  included some screenshots of the Facebook page in my documentation. 
+- To prevent any restraints regarding the presentation of my project in the readme.md file - I have  included some screenshots of the Facebook page in my documentation and followed those instructions by Code Institute. 
 
 ![Facebook 1](assets/images/FACEBOOK/Facebook%201.png)
 ![Facebook 2](assets/images/FACEBOOK/Facebook%202.png)
