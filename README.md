@@ -137,8 +137,6 @@ HTML, CSS, JavaScript, Python 3
 
 * [Google Dev Tools](https://developer.chrome.com/docs/devtools/) - To troubleshoot, test features and solve issues with responsiveness and styling.
 
-* [Favicon.io](https://favicon.io/favicon-generator/) - To create the favicon
-
 * [MailChimo](https://mailchimp.com/?currency=SEK) - To create newsletters. 
 
 * [Color Scheme](https://coolors.co/000000-2f1000-621b00-945600-c75000) - To create colorschemes. 
@@ -160,6 +158,13 @@ Stripe Documentation- setting up stripe elements to accept payment [docs](https:
 ---
 
 ## Features
+
+1. Once you come to the Filter for Folks website the opening page looks like this: 
+
+![opening-page]
+
+2. As visitor you have multiple options. For starters if you can click on the "OUR INVENTORY" button to come the total iventory page. 
+
 
 
 
