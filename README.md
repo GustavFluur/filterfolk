@@ -168,9 +168,11 @@ Stripe Documentation- setting up stripe elements to accept payment [docs](https:
 
 3. This is to generate more traffic to the website and arouse curiosity. Once you click on the gray button that says "Wanna see our prices?" it takes you to the register page.
 
-4. One you have created an account it it greats you with a new message on the home page. This is an indication that you're in and a sense of change within the navigation for the visitor. Who is now our potential customer. 
+4. Once you have created an account it it greats you with a new message on the home page. This is an indication that you're in and a sense of change within the navigation for the visitor. Who is now our full customer with more accessibility on the page. 
 
-5. 
+5. The navbar has also been updated for the user. If you are an admin you are been allocated with a green button that's being called add product. This is to add some new products for the admin into the page and for customer to see how much they have spent in the cart area. 
+
+6. 
 
 
 
