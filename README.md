@@ -67,6 +67,8 @@ The reason for it was made this way was to save time and find a product image th
 
 - To prevent any restraints regarding the presentation of my project in the readme.md file - I have  included some screenshots of the Facebook page in my documentation and followed those instructions by Code Institute. 
 
+- If the Filter for Folk's [Facebook Page](https://www.facebook.com/profile.php?id=61561386792798) still exist -  please feel free to visit it!
+
 ![Facebook 1](assets/images/FACEBOOK/Facebook%201.png)
 ![Facebook 2](assets/images/FACEBOOK/Facebook%202.png)
 ![Facebook 3](assets/images/FACEBOOK/Facebook%203.png)
