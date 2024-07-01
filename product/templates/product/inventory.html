@@ -23,7 +23,9 @@
                                         <hr>
                                         <div>
                                             <h2 class="card-title text-dark mt-0">{{ product.name }}</h2>
-                                            <p class="card-text text-dark">Price: ${{ product.price}}</p>
+                                            {% if user.is_authenticated %}
+                                                <p class="card-text text-dark">Price: ${{ product.price}}</p>
+                                            {% endif %}
                                         </div>
                                     </div>
                                 </div>

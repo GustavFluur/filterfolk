@@ -26,7 +26,7 @@
                 {% if user.is_authenticated %}
                     <p class="lead mb-0 text-left font-weight-bold"><strong>Price: </strong> ${{ product.price }}</p>
                 {% else %} 
-                <a href="{% url 'account_signup' %}" class="btn btn-outline-secondary text-uppercase">Wanna se our prices? <i class="fas fa-dollar-sign"></i></a> 
+                <a href="{% url 'account_signup' %}" class="btn btn-outline-secondary text-uppercase">Wanna se our prices? Create an account! <i class="fas fa-dollar-sign"></i></a> 
                <br>
                 {% endif %} 
                 <br>
@@ -123,7 +123,9 @@
                                             <hr>
                                             <div>
                                                 <h2 class="card-title text-dark mt-0">{{ product.name }}</h2>
-                                                <p class="card-text text-dark">Price: ${{ product.price }}</p>
+                                                {% if user.is_authenticated %}
+                                                    <p class="card-text text-dark">Price: ${{ product.price }}</p>
+                                                {% endif %}
                                             </div>
                                         </div>
                                     </div>
