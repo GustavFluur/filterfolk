@@ -128,6 +128,76 @@ HTML, CSS, JavaScript, Python 3
 * django-storages - a storage backend library
 
 
+### Programs Used
+
+
+* [GitHub](https://github.com/) - To save and store the files for this project.
+
+* [Pip](https://pypi.org/project/pip/) - A tool for installing Python packages.
+
+* [Google Dev Tools](https://developer.chrome.com/docs/devtools/) - To troubleshoot, test features and solve issues with responsiveness and styling.
+
+* [Favicon.io](https://favicon.io/favicon-generator/) - To create the favicon
+
+* [MailChimo](https://mailchimp.com/?currency=SEK) - To create newsletters. 
+
+* [Color Scheme](https://coolors.co/000000-2f1000-621b00-945600-c75000) - To create colorschemes. 
+
+### Stripe
+
+* [Stripe](https://stripe.com/gb) has been used in the project to implement the payment system.
+
+Stripe for the website is currently in developer mode, which allows us to be able to process test payments to check the function of the site.
+
+| Type | Card No | Expiry | CVC | ZIP |
+| :--- | :--- |:--- | :--- | :--- |
+| Success| Visa | 4242 4242 4242 4242 | A date in the future | Any 3 digits | Any 5 digits |
+| Require authorisation | 4000 0027 6000 3184 | A date in the future | Any 3 digits | Any 5 digits |
+| Declined | 4000 0000 0000 0002 | A date in the future | Any 3 digits | Any 5 digits |
+
+Stripe Documentation- setting up stripe elements to accept payment [docs](https://stripe.com/docs/js)
+
+---
+
+## Features
+
+
+
+### Future Implementations
+
+Favicon - wasn't implemented into the project. The reason behind this was that I started my project from scratch and didn't use 
+
+
+
+## Credits to my mentor
+
+I want to show my gratitude to my mentor at Code Insitute, who guided me in this project. 
+
+- Jubril Akolade 
+
+I also want to highlight my previous mentor who supported me the whole course: 
+
+- Martina Terlevic
+
+
+## Credits to TUT Support on Code Institute
+
+- John
+- Roo 
+- Oisin
+- Roman
+- Sarah
+- Thomas 
+- Holly
+- Rebecca 
+- Lewis
+- Martin 
+- Jason 
+- Alan 
+- Gemma
+- Sean 
+- Scott 
+
 ## Instructions if the workspace fails:
 
 ##### Follow these steps: 
