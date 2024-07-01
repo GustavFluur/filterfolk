@@ -49,7 +49,8 @@ With this message I want to show them my gratitude that I was allowed to use the
 
 ### Colour Scheme
 
-As the primary focus of the site is on the products for sale, the site uses a very small colour palette.
+![color-scheme](assets/images/COLOR_SCHEME/color-scheme.png)
+![color-scheme2](assets/images/COLOR_SCHEME/color-scheme2.png)
 
 ### Typography
 
