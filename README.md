@@ -314,6 +314,8 @@ Stripe Documentation- setting up stripe elements to accept payment [docs](https:
 
 - An addition in the product filter element, due to the fact that there are few products in there you are able see what the company got in their storage. However it requires a feature that you can easily distinguish from one product to another. The reason it was not added into the project was to reduce the sense of complexity and save time. 
 
+- No custom 404 error page was made in this project but it will! 
+
 - Unsure if it works after the deployment - the images in this readme file doesn't show themselves or it appears to broken. To whom who ever read this please open the project so you'll se it in the preview. Thank you! 
 
 
