@@ -22,6 +22,43 @@ This project was inspired by the Stockholm based company [Folkfilter](https://ww
 
 With this message I want to show them my gratitude that I was allowed to use their product images into my website. Other product images was taken through a google search and from another Swedish company calls [Biltema](https://www.biltema.se/). 
 
+## Table of Contents
+
+
+1. [User stories](#user-stories)
+
+2. [Design](#design)
+
+3. [Imagery](#imagery)
+
+4. [Facebook page](#facebook-page)
+
+5. [Technologies Used](#technologies-used)
+
+6. [Features](#deployment--local-development)
+
+7. [Future Implementations](#future-implementations)
+
+8. [Accessibility](#accessibility)
+
+9. [Deployment & Local Development](#deployment--local-development)
+
+10. [Bugs Report](#bugs-report)
+
+11. [Validator Test](#validator-test)
+
+12. [Technologies Used](#technologies-used)
+
+13. [Deployment](#deployment)
+
+14. [Installed Packages](#installed-packages)
+
+15. [Features Left to Implement](#features-left-to-implement)
+
+16. [Credits](#credits)
+
+17. [Credits to my mentor](#credits-to-my-mentor)
+
 
 ### User Stories
 
@@ -162,14 +199,6 @@ Stripe for the website is currently in developer mode, which allows us to be abl
 Stripe Documentation- setting up stripe elements to accept payment [docs](https://stripe.com/docs/js)
 
 ---
-
-## Deployment & Local Development
-
-### Deployment
-
-The project is deployed using Heroku. To deploy the project:
-
-
 
 ## Features
 
@@ -450,7 +479,7 @@ We have been using the sqlite3 database in development, however this is only ava
     STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
     ```
 
-# Boutique Ado - Testing
+# Testing
 
 ---
 
@@ -505,7 +534,78 @@ We have been using the sqlite3 database in development, however this is only ava
 | File | Result |
 | :--- | :--- |
 | checkout/static/js/stripe_elements.js | Pass (Mentions one unused variable - stripe) |
-| profiles/static/js/countryfield.js | Pass |
+
+
+### Python Validation
+
+PEP8 style guideline compliance was checked using [pycodestyle](https://pycodestyle.pycqa.org/en/latest/index.html) in the IDE while developing the project and [CI Python Linter](https://pep8ci.herokuapp.com/) was also used to check all python files were free of errors.
+
+| File | Result |
+| :--- | :--- |
+| filter_folk/settings.py | Pass |
+| filter_folk/urls.py | Pass |
+| cart/contexts.py | Pass |
+| cart/urls.py | Pass |
+| cart/views.py | Pass |
+| checkout/admin.py | Pass |
+| checkout/forms.py | Pass |
+| checkout/models.py | |
+| checkout/signals.py | Pass |
+| checkout/urls.py | Pass |
+| checkout/views.py | Pass |
+| checkout/webhook_handler.py | Pass |
+| checkout/webhooks.py | Pass |
+| home/urls.py | Pass |
+| home/views.py | Pass |
+| product/admin.py | Pass |
+| product/forms.py | Pass |
+| product/models.py | Pass |
+| product/urls.py | Pass |
+| product/views.py | Pass |
+| product/widgets.py | Pass |
+| accounts/forms.py | Pass |
+| accounts/models.py | Pass |
+| accounts/urls.py | Pass |
+| accounts/views.py | Pass |
+
+### Lighthouse Testing
+
+[Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) testing was performed on the site to check for performance, accessibility, best practices and SEO.
+
+#### Desktop
+
+![Lighthouse - Desktop](assets/images/Lighthouse%20test/Lighthouse%20-%20Desktop.png)
+
+#### Mobile
+
+![Lighthouse - Mobile](assets/images/Lighthouse%20test/Lighthouse-%20Mobile.png)
+
+### WAVE Accessibility Testing
+
+[WAVE](https://wave.webaim.org/report#/https://wave.webaim.org/extension) (web accessibility evaluation tool) was used on the site to check for issues relating to accessibility.
+
+---
+
+### Full Testing
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass or Fail |
+| :--- | :--- | :--- | :--- | :--- |
+
+---
+
+## Bugs
+
+### Solved Bugs
+
+| Bug No. | Bug | How I Solved | Evidence |
+| :--- |:--- |:--- | :---: |
+||||
+
+### Known Bugs
+
+| Bug No. | Bug | Evidence |
+| :--- | :--- | :--- |
+||||
 
 ## Credits
 
@@ -517,7 +617,7 @@ I was also on a study break due to personal reasons and during that period I was
 
 ---- 
 
-#### Projects that has supported me thanks to Jubril Akolade(Mentor) 
+#### Projects that has supported me thanks to Jubril Akolade (Mentor) 
 
 - [Boutique-Ado by Kera Cudmore](https://github.com/kera-cudmore/Boutique-Ado) & I used the project's readme file as foundation. It might appear the same and I was stressed before I hand it in the project. Thus I some of the content within the readme file is structured the same. Plus I have dyslexia to save some time I was copy and pasted some of the words into my readme file. Likewise it's the same walkthrough project as it for the course at Code Institute. I want to have it addressed into my readme file and thanks for your understanding! 
 - [The Quiz Arms by Kera Cudmore](https://github.com/kera-cudmore/TheQuizArms)
@@ -559,11 +659,3 @@ I also want to highlight my previous mentor who supported me the whole course:
 - Gemma
 - Sean 
 - Scott 
-
-## Instructions if the workspace fails:
-
-##### Follow these steps: 
-
-- pip3 install 'django<4'
-- pip install django-crispy-forms
-- python -m pip install Pillow
