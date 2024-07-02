@@ -45,10 +45,6 @@ With this message I want to show them my gratitude that I was allowed to use the
 
 12. [Technologies Used](#technologies-used)
 
-13. [Deployment](#deployment)
-
-14. [Installed Packages](#installed-packages)
-
 15. [Features Left to Implement](#features-left-to-implement)
 
 16. [Credits](#credits)
