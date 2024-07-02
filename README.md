@@ -200,7 +200,9 @@ Stripe Documentation- setting up stripe elements to accept payment [docs](https:
 
 8. However, in order to see all the products again and make another product search you need to press on default button to clear the filter. 
 
-9. If chooses one of the categories you'll see either one or several items in the filter. * As mention the user needs to use the default filter button to see all the inventory again. *  
+9. If chooses one of the categories you'll see either one or several items in the filter. * As mention the user needs to use the default filter button to see all the inventory again. * 
+
+#### Purchase experience view:
 
 10. If you decides to you purchase something, then you click on one of the products. In this case we purchases a vacuum cleaner: 
 
@@ -214,25 +216,69 @@ Stripe Documentation- setting up stripe elements to accept payment [docs](https:
 
 ![cart-content](assets/images/FEATURES/cart-content.png)
 
-13. Right after you click on secure checkout you'll be navigated to the checkout page where you can add the required personal details for you purchase. 
+13. Right after you click on secure checkout you'll be navigated to the checkout page where you can add the required personal details for you purchase:
+
+![Checkout page](assets/images/FEATURES/checkout-page-submitted-details.png)
+
+14. Once you clicked on the secure checkout you will be receiving a purchase confirmation: 
+
+![Checkout page](assets/images/FEATURES/purchase-confirmation%20.png)
+
+#### Tracking purchase view:
+
+15. As a user you are able to do some updates in your personal account, if your personal details has changed and also you can look on previous orders (related to your personal account) - you'll able to find this necessary information there. Plus by clicking on the "order number" you'll be navigated back to the confirmation page. Thus it's an easy user experience to the customer and also important if they want to call or send an email to the Filter for Folks customer service in case of tracking the order. 
+
+![Profile page & Tracking orders](assets/images/FEATURES/profile-account-info.png)
+
+#### Reach out to the business view:
+
+16. If you want to reach out to the business you need to click on the "contact" button in the footer below or the second nav element. The user can either contact by either email and calling the store. On the contact page the user is able to sign up for the newsletter connected to the Mail Chimp and find Filter for Folks Facebook page. (How the facebook looks like you'll find it above).
+
+![Contact page](assets/images/FEATURES/connection-b2c.png)
 
 
+17. How do you get yourself back to the home page? Either clicking on the business name "Filter for Folks" in the top left - in the nav element below. In there you also find the page of Filter for Folk's [Privacy Policy](https://www.termsfeed.com/live/1a7cc1bc-3fec-45b9-87a8-a43810a76fdf) to their users and how they are following the [GDPR](https://gdpr-info.eu/).  
 
-If you are an admin you are been allocated with a green button that's being called add product. This is to add some new products for the admin into the page and for customer to see how much they have spent in the cart area. 
- 
+![Nav below](assets/images/FEATURES/below-nav.png)
 
+#### Sign In & Log Out views:
+
+18. Once you want to leave the website you are clicking on the "logout" button in above nav element and the same comes to if you already have an account though you click on "Sign In" instead: 
+
+![Log Out](assets/images/FEATURES/log-out.png)
+
+19. Once you click on the sign out then you log out from the page. 
+
+![Sign In](assets/images/FEATURES/Sign-In.png)
+
+20. The user who clicks on the Sign In button will be directed to this page: 
+
+![Sign In Page](assets/images/FEATURES/sign-in-page.png)
+
+#### Admin view:
+
+21. If you are an admin you are been allocated with a green button that's being called add product. This is to add some new products for the admin into the page and for customer to see how much they have spent in the cart area.
+
+![Sign In Page](assets/images/FEATURES/filteradmin-view.png)
+
+22. The add product page looks like this as the admin can choose name, which category that particular product belongs to, description, price and image. 
+
+![Add Product Page](assets/images/FEATURES/add-product-page.png)
 
 
 
 ### Future Implementations
 
-Favicon - wasn't implemented into the project. The reason behind this was that I started my project from scratch and didn't use 
+Favicon - wasn't implemented into the project. The reason behind this was that I started my project from scratch and didn't use Boutique Ado as foundation in beginning. Neither allauth packages thus some templates are in the allauth folder and other in core app. 
+
+A feature that unfortunately was not implemented into the project is that the admin is able to create an category to further enhance the website for its liking.
+
 
 
 
 ## Credits to my mentor
 
-I want to show my gratitude to my mentor at Code Insitute, who guided me in this project. 
+I want to show my gratitude to my mentor at Code Institute, who guided me in this project. 
 
 - Jubril Akolade 
 
