@@ -202,7 +202,20 @@ Stripe Documentation- setting up stripe elements to accept payment [docs](https:
 
 9. If chooses one of the categories you'll see either one or several items in the filter. * As mention the user needs to use the default filter button to see all the inventory again. *  
 
-10. If you decides to you purchase something, then you click on one of the products. In this case we purchases a vaccum cleaner 
+10. If you decides to you purchase something, then you click on one of the products. In this case we purchases a vacuum cleaner: 
+
+![product-vacuum-cleaner](assets/images/FEATURES/product-vacuum-cleaner.png)
+
+11. You immediately navigated to the product detail page where you decides if you want to add this item into the shopping cart and its quantity. Plus you see an update in terms of its color (from gray to turquoise) and quantity in the cart. 
+
+![cart-change](assets/images/FEATURES/shopping-change-add.png)
+
+12. In the shopping it looks like this where you can do its changes and or if you want to delete the product entirely. This is before you do your checkout:
+
+![cart-content](assets/images/FEATURES/cart-content.png)
+
+13. Right after you click on secure checkout you'll be navigated to the checkout page where you can add the required personal details for you purchase. 
+
 
 
 If you are an admin you are been allocated with a green button that's being called add product. This is to add some new products for the admin into the page and for customer to see how much they have spent in the cart area. 
