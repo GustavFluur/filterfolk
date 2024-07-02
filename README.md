@@ -1,7 +1,7 @@
 ### Project Goals
 
 
-[Am I responsive](assets/images/Am%20I%20responsive%20.png)
+![Am I responsive](assets/images/Am%20I%20responsive%20.png)
 
 [Filter for Folks](https://filter-for-folks-58441ed4952a.herokuapp.com/) is a Business to Consumer (B2C) e-commerce site.
 
