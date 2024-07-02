@@ -464,22 +464,26 @@ We have been using the sqlite3 database in development, however this is only ava
 | :--- | :--- |
 | Home | [Pass](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffilter-for-folks-58441ed4952a.herokuapp.com%2F) |
 | 17 errors| Not affecting the code |
+---
+
 | Inventory page | [Pass](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffilter-for-folks-58441ed4952a.herokuapp.com%2Fproduct%2Fproducts%2F) |
 | 2 errors| Not affecting the code |
 | Products details | [Pass](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffilter-for-folks-58441ed4952a.herokuapp.com%2Fproduct%2F1%2F) |
 | 6 errors| Not affecting the code |
-
-
-| Add product | [Pass](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkera-cudmore-boutique-ado.herokuapp.com%2Fproducts%2Fadd%2F) |
-
-
-
-
-| Edit product | [Pass](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkera-cudmore-boutique-ado.herokuapp.com%2Fproducts%2Fedit%2F8%2F) |
-| Bag | [Pass](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkera-cudmore-boutique-ado.herokuapp.com%2Fbag%2F) |
-| Checkout | [Pass](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkera-cudmore-boutique-ado.herokuapp.com%2Fcheckout%2F) |
-| Profile | [Pass](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkera-cudmore-boutique-ado.herokuapp.com%2Fprofile%2F) |
-
+| Add product | [Pass](https://filter-for-folks-58441ed4952a.herokuapp.com/product/newproduct/) |
+|IO Error| HTTP resource not retrievable. | The HTTP status from the remote server was: 404. |
+| Possible explanation:| It can't access they page since it requires an account|
+|Adding products is not an issue despite validation error|
+| Edit product | [Pass](https://filter-for-folks-58441ed4952a.herokuapp.com/product/2/edit/) |
+|IO Error| HTTP resource not retrievable. | The HTTP status from the remote server was: 404. |
+|Editing products is not an issue despite validation error|
+| Possible explanation:| It can't access they page since it requires an account|
+| Cart | [Pass](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffilter-for-folks-58441ed4952a.herokuapp.com%2Fcart%2F) |
+| 5 errors| Not affecting the code |
+| Checkout | [Pass](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffilter-for-folks-58441ed4952a.herokuapp.com%2Fcheckout%2F) |
+|IO Error| HTTP resource not retrievable. | The HTTP status from the remote server was: 404. |
+| Profile | [Pass](hhttps://validator.w3.org/nu/?doc=https%3A%2F%2Ffilter-for-folks-58441ed4952a.herokuapp.com%2Faccount%2F) |
+|IO Error| HTTP resource not retrievable. | The HTTP status from the remote server was: 404. |
 
 
 
