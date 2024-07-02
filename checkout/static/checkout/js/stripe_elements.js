@@ -1,12 +1,3 @@
-/*
-    Core logic/payment flow for this comes from here:
-    https://stripe.com/docs/js
-    https://stripe.com/docs/payments/accept-a-payment	
-
-    CSS from here:
-    https://stripe.com/docs/stripe-js
-*/
-
 var stripePublicKey = $('#id_stripe_public_key').text().slice(1, -1);
 var clientSecret = $('#id_client_secret').text().slice(1, -1);
 console.log('stripePublicKey', stripePublicKey)
@@ -62,7 +53,7 @@ form.addEventListener('submit', function(ev) {
     $('#loading-overlay').fadeToggle(100);
 
     var saveInfo = Boolean($('#id-save-info').attr('checked'));
-    // From using {% csrf_token %} in the form
+
     var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
     var postData = {
         'csrfmiddlewaretoken': csrfToken,
@@ -102,7 +93,7 @@ form.addEventListener('submit', function(ev) {
             },
         }).then(function(result) {
             if (result.error) {
-                // console.log('error', error);
+
                 var errorDiv = document.getElementById('card-errors');
                 var html = `
                     <span class="icon" role="alert">
@@ -122,7 +113,7 @@ form.addEventListener('submit', function(ev) {
         });
     }).fail(function () {
         console.log('stripe call failed')
-        // Just reload the page, the error will be in django messages
+
         location.reload();
     });
 });

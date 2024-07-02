@@ -294,7 +294,7 @@ I have paid careful attention while coding to make sure the website is as user-f
 * Using descriptive alt attributes on images on the site.
 * Providing information for screen readers where there are icons used and no text.
 * Ensuring that there is a sufficient color contrast throughout the site.
-* Accessibility was tested using Lighthouse and WAVE and further information can be found in the [TESTING.md](TESTING.md).
+* Accessibility was tested using Lighthouse and WAVE and further information can be down the readme file.
 
 ## Deployment & Local Development
 
@@ -482,10 +482,30 @@ We have been using the sqlite3 database in development, however this is only ava
 | 5 errors| Not affecting the code |
 | Checkout | [Pass](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffilter-for-folks-58441ed4952a.herokuapp.com%2Fcheckout%2F) |
 |IO Error| HTTP resource not retrievable. | The HTTP status from the remote server was: 404. |
-| Profile | [Pass](hhttps://validator.w3.org/nu/?doc=https%3A%2F%2Ffilter-for-folks-58441ed4952a.herokuapp.com%2Faccount%2F) |
+| Account | [Pass](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffilter-for-folks-58441ed4952a.herokuapp.com%2Faccount%2F) |
 |IO Error| HTTP resource not retrievable. | The HTTP status from the remote server was: 404. |
 
+### CSS Validation
 
+[W3C validator](https://validator.w3.org/) was used to validate the CSS in this project.
+
+| File | Result |
+| :--- | :--- |
+| static/css/base.css | Pass |
+| 2 errors| Not affecting the code or project |
+| checkout/static/css/checkout.css | Pass |
+| 2 errors| Not affecting the code or project |
+| profiles/static/css/account.css | Pass |
+| 2 errors| Not affecting the code or project |
+
+### JavaScript Validation
+
+[JS Hint](https://jshint.com/) was used to validate the projects JavaScript files.
+
+| File | Result |
+| :--- | :--- |
+| checkout/static/js/stripe_elements.js | Pass (Mentions one unused variable - stripe) |
+| profiles/static/js/countryfield.js | Pass |
 
 ## Credits
 
