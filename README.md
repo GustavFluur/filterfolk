@@ -161,13 +161,13 @@ Stripe Documentation- setting up stripe elements to accept payment [docs](https:
 
 Once you come to the Filter for Folks website the opening page looks like this: 
 
-![opening-page](assets/images/FEATURES/opening-page.png)
+![ opening-page ](assets/images/FEATURES/opening-page.png)
 
 As visitor you have multiple options. For starters if you can click on the "OUR INVENTORY" button to come the total inventory page. In there you are able to see the product description and images of each product, however to prevent other competitors to see what our prices are we have set up a function that a new visitor needs to register an account at Filter for Folks. 
 
-![Inventory Mobile](assets/images/FEATURES/our-inventory-mobile.png)
-![Inventory Desktop](assets/images/FEATURES/our-inventory-desktop.png)
-![Inventory Desktop 2](assets/images/FEATURES/our-inventory-desktop%202.png)
+![ Inventory Mobile ](assets/images/FEATURES/our-inventory-mobile.png)
+![ Inventory Desktop ](assets/images/FEATURES/our-inventory-desktop.png)
+![ Inventory Desktop 2 ](assets/images/FEATURES/our-inventory-desktop%202.png)
 
 This is to generate more traffic to the website and arouse curiosity. Once you click on the gray button that says "Wanna see our prices?" it takes you to the register page.
 
