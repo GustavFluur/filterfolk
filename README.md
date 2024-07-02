@@ -159,28 +159,26 @@ Stripe Documentation- setting up stripe elements to accept payment [docs](https:
 
 ## Features
 
-1. Once you come to the Filter for Folks website the opening page looks like this: 
+Once you come to the Filter for Folks website the opening page looks like this: 
 
 ![opening-page](assets/images/FEATURES/opening-page.png)
 
-2. As visitor you have multiple options. For starters if you can click on the "OUR INVENTORY" button to come the total inventory page. In there you are able to see the product description and images of each product, however to prevent other competitors to see what our prices are we have set up a function that a new visitor needs to register an account at Filter for Folks. 
+As visitor you have multiple options. For starters if you can click on the "OUR INVENTORY" button to come the total inventory page. In there you are able to see the product description and images of each product, however to prevent other competitors to see what our prices are we have set up a function that a new visitor needs to register an account at Filter for Folks. 
 
-#### Mobile
+
 
 ![Inventory Mobile](assets/images/FEATURES/our-inventory-mobile.png)
 
-#### Desktop
 
 ![Inventory Desktop](assets/images/FEATURES/our-inventory-desktop.png)
 ![Inventory Desktop 2](assets/images/FEATURES/our-inventory-desktop%202.png)
 
-3. This is to generate more traffic to the website and arouse curiosity. Once you click on the gray button that says "Wanna see our prices?" it takes you to the register page.
+This is to generate more traffic to the website and arouse curiosity. Once you click on the gray button that says "Wanna see our prices?" it takes you to the register page.
 
-4. Once you have created an account it it greats you with a new message on the home page. This is an indication that you're in and a sense of change within the navigation for the visitor. Who is now our full customer with more accessibility on the page. 
+Once you have created an account it it greats you with a new message on the home page. This is an indication that you're in and a sense of change within the navigation for the visitor. Who is now our full customer with more accessibility on the page. 
 
-5. The navbar has also been updated for the user. If you are an admin you are been allocated with a green button that's being called add product. This is to add some new products for the admin into the page and for customer to see how much they have spent in the cart area. 
-
-6. 
+The navbar has also been updated for the user. If you are an admin you are been allocated with a green button that's being called add product. This is to add some new products for the admin into the page and for customer to see how much they have spent in the cart area. 
+ 
 
 
 
