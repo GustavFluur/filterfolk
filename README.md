@@ -45,9 +45,13 @@ With this message I want to show them my gratitude that I was allowed to use the
 
 10. [Features Left to Implement](#features-left-to-implement)
 
-11. [Credits](#credits)
+11. [Testing](#testing)
 
-12. [Credits to my mentor](#credits-to-my-mentor)
+12. [Credits](#credits)
+
+13. [Credits to my mentor](#credits-to-my-mentor)
+
+14. [Credits to TUT Support on Code Institute](#credits-to-tut-support-on-code-institute)
 
 
 ### User Stories
@@ -301,9 +305,17 @@ Stripe Documentation- setting up stripe elements to accept payment [docs](https:
 
 ### Future Implementations
 
-Favicon - wasn't implemented into the project. The reason behind this was that I started my project from scratch and didn't use Boutique Ado as foundation in beginning. Neither allauth packages thus some templates are in the allauth folder and other in core app. 
+- Favicon - wasn't implemented into the project. The reason behind this was that I started my project from scratch and didn't use Boutique Ado as foundation in beginning. Neither allauth packages thus some templates are in the allauth folder and other in core app. 
 
-A feature that unfortunately was not implemented into the project is that the admin is able to create an category to further enhance the website for its liking.
+- A feature that unfortunately was not implemented into the project is that the admin is able to create an category to further enhance the website for its liking.
+
+
+- Customers can rate the products from 1 to 5 stars. 
+
+- An addition in the product filter element, due to the fact that there are few products in there you are able see what the company got in their storage. However it requires a feature that you can easily distinguish from one product to another. The reason it was not added into the project was to reduce the sense of complexity and save time. 
+
+- Unsure if it works after the deployment - the images in this readme file doesn't show themselves or it appears to broken. To whom who ever read this please open the project so you'll se it in the preview. Thank you! 
+
 
 ### Accessibility
 
