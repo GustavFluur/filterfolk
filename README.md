@@ -1,11 +1,12 @@
-### Project Goals
-
+# Filter For Folks 
 
 ![Am I responsive](assets/images/Am%20I%20responsive/Am%20I%20responsive%20.png)
 
+### Project Goals
+
 Filter for Folks is a Business to Consumer (B2C) e-commerce site.
 
-[Deployed Website](https://filter-for-folks-58441ed4952a.herokuapp.com/) 
+[ Link to deployed site Deployed Website](https://filter-for-folks-58441ed4952a.herokuapp.com/) 
 
 The sites primary audience will be people who are living in condominiums and require air filter replacement in their apartments.
 
@@ -277,6 +278,30 @@ Stripe Documentation- setting up stripe elements to accept payment [docs](https:
 Favicon - wasn't implemented into the project. The reason behind this was that I started my project from scratch and didn't use Boutique Ado as foundation in beginning. Neither allauth packages thus some templates are in the allauth folder and other in core app. 
 
 A feature that unfortunately was not implemented into the project is that the admin is able to create an category to further enhance the website for its liking.
+
+
+## Credits
+
+The foundation of this project is based upon the walkthrough project [Boutique Ado](https://github.com/ckz8780/boutique_ado_v1). Since the requirements needed to have a checkout, cart, payment functionalities I used the majority of the code in that element. Because I saw the complexity of doing it dependently and Code Institute's TUT support referred me to the walkthrough project once I got stuck so I was forced to let it go to conduct my coding and followed the requirements for finalize the project accordingly. 
+
+Before I started to work on Filter For Folks, I actually worked on another project and I came across a lot of issues regarding its migrations, stripe and deployment on Heroku. Some of the code from [Gold Scroll](https://github.com/GustavFluur/gold_scroll) has been a great help and a sense of direction if I got stuck during the process. 
+
+I was also on a study break due to personal reasons and during that period I was keeping up my coding skills by working on [Merch Discount](https://github.com/GustavFluur/merch_discount) and this one is based upon the a course from [Learn Django by Building an Online Marketplace – Python Tutorial for Beginners](https://www.youtube.com/watch?v=ZxMB6Njs3ck) & [E-commerce Website using Django | Live Demo | Desphixs](https://www.youtube.com/watch?v=5n8FKv19os0&list=PL_KegS2ON4s53FNSqgXFdictTzUbGjoO-) - recommended by my mentor Jubril Akolade. 
+
+---- 
+
+#### Projects that has supported me thanks to Jubril Akolade(Mentor) 
+
+- [Boutique-Ado by Kera Cudmore](https://github.com/kera-cudmore/Boutique-Ado)
+- [The Quiz Arms by Kera Cudmore](https://github.com/kera-cudmore/TheQuizArms)
+
+### Other projects that have give me an inspiration to this project: 
+
+
+- [Python Django Web Framework - Full Course for Beginners](https://www.youtube.com/watch?v=F5mRW0jo-U4&t=1795s)
+- [How to Build an E-commerce Website with Django and Python](https://www.youtube.com/watch?app=desktop&v=YZvRrldjf1Y) 
+- [Python Django Ecommerce CRUD and UUID - Managing multiple addresses](https://www.youtube.com/watch?app=desktop&v=8SP76dopYVo)
+- [Building an Ecommerce Store with Django and Stripe Payments (Live Coding)](https://www.youtube.com/watch?app=desktop&v=g96MJj2pPg8&fbclid=IwAR3V1bLoN8-Np_HTYjNOfAGSmYmmWBfp0Lxv0IC_QJkxTbYx_EaHGLTfMU8)
 
 
 
