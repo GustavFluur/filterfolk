@@ -43,13 +43,11 @@ With this message I want to show them my gratitude that I was allowed to use the
 
 9. [Deployment & Local Development](#deployment--local-development)
 
-12. [Technologies Used](#technologies-used)
+10. [Features Left to Implement](#features-left-to-implement)
 
-15. [Features Left to Implement](#features-left-to-implement)
+11. [Credits](#credits)
 
-16. [Credits](#credits)
-
-17. [Credits to my mentor](#credits-to-my-mentor)
+12. [Credits to my mentor](#credits-to-my-mentor)
 
 
 ### User Stories
