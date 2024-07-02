@@ -159,11 +159,13 @@ Stripe Documentation- setting up stripe elements to accept payment [docs](https:
 
 ## Features
 
-Once you come to the Filter for Folks website the opening page looks like this: 
+#### New Visitor view:
+
+1. Once you come to the Filter for Folks website the opening page looks like this: 
 
 ![ opening-page ](assets/images/FEATURES/opening-page.png)
 
-As visitor you have multiple options. For starters if you can click on the "OUR INVENTORY" button to come the total inventory page. 
+2. As visitor you have multiple options. For starters if you can click on the "OUR INVENTORY" button to come the total inventory page. 
 
 ![Inventory Mobile](assets/images/FEATURES/our-inventory-mobile.png)
 
@@ -172,14 +174,35 @@ As visitor you have multiple options. For starters if you can click on the "OUR 
 
 ![Product-Detail-no-account](assets/images/FEATURES/product-detail-no-acoount.png)
 
-In there you are able to see the product description and images of each product, however to prevent other competitors to see what our prices are we have set up a function that a new visitor needs to register an account at Filter for Folks. 
+3. In there you are able to see the product description and images of each product, however to prevent other competitors to see what our prices are we have set up a function that a new visitor needs to register an account at Filter for Folks. 
+
+![register-account](assets/images/FEATURES/register-account.png)
+
+4. This is to generate substantial amount of traffic to the website and arouse curiosity. Once you click on the gray button that says "Wanna see our prices?" it takes you to the register page.
+
+![after-register-account](assets/images/FEATURES/after-register-account.png)
+
+5. Once you have created an account it it greats you with a new message on the home page. This is an indication that you're in and a sense of change within the navigation for the visitor. Who is now our full customer with more accessibility on the page. Besides has the navbar been updated:
+
+![updated-navbar](assets/images/FEATURES/updated-navbar.png)
+
+6. The navbar has also been updated for the user. With 3 new buttons to account member. Once you click on uppercase button "search products". You'll enter product filter page.  
+
+![search-product](assets/images/FEATURES/search-product.png)
+![product-filter](assets/images/FEATURES/product-filter-page.png)
+![product-filter-tab](assets/images/FEATURES/product-filter-tab.png)
+
+7. In the tab to the left of the product filter you are able to type your product of interest in the search bar. e.g, you search toolbox: 
+
+![toolbox-search-example](assets/images/FEATURES/toolbox-search-example.png)
+
+8. However, in order to see all the products again and make another product search you need to press on default button to clear the filter. 
+
+9. If chooses one of the categories you'll see either one or several items in the filter. * As mention the user needs to use the default filter button to see all the inventory again.  
 
 
-This is to generate substantial amount of traffic to the website and arouse curiosity. Once you click on the gray button that says "Wanna see our prices?" it takes you to the register page.
 
-Once you have created an account it it greats you with a new message on the home page. This is an indication that you're in and a sense of change within the navigation for the visitor. Who is now our full customer with more accessibility on the page. 
-
-The navbar has also been updated for the user. If you are an admin you are been allocated with a green button that's being called add product. This is to add some new products for the admin into the page and for customer to see how much they have spent in the cart area. 
+If you are an admin you are been allocated with a green button that's being called add product. This is to add some new products for the admin into the page and for customer to see how much they have spent in the cart area. 
  
 
 
