@@ -43,10 +43,6 @@ With this message I want to show them my gratitude that I was allowed to use the
 
 9. [Deployment & Local Development](#deployment--local-development)
 
-10. [Bugs Report](#bugs-report)
-
-11. [Validator Test](#validator-test)
-
 12. [Technologies Used](#technologies-used)
 
 13. [Deployment](#deployment)
