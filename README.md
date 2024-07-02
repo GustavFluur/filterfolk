@@ -493,8 +493,6 @@ We have been using the sqlite3 database in development, however this is only ava
 | :--- | :--- |
 | Home | [Pass](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffilter-for-folks-58441ed4952a.herokuapp.com%2F) |
 | 17 errors| Not affecting the code |
----
-
 | Inventory page | [Pass](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffilter-for-folks-58441ed4952a.herokuapp.com%2Fproduct%2Fproducts%2F) |
 | 2 errors| Not affecting the code |
 | Products details | [Pass](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffilter-for-folks-58441ed4952a.herokuapp.com%2Fproduct%2F1%2F) |
