@@ -6,7 +6,7 @@
 
 Filter for Folks is a Business to Consumer (B2C) e-commerce site.
 
-[ Link to deployed site Deployed Website](https://filter-for-folks-58441ed4952a.herokuapp.com/) 
+[ Link to deployed site](https://filter-for-folks-58441ed4952a.herokuapp.com/) 
 
 The sites primary audience will be people who are living in condominiums and require air filter replacement in their apartments.
 
@@ -63,7 +63,7 @@ With this message I want to show them my gratitude that I was allowed to use the
 
 ### Imagery
 
-The opening page was added from [Pexels](https://www.pexels.com/) and it was also used in other areas of the website to appear professional depending on the navigation. A few product images as mentioned in the beginning the readme file was taken from a simple [Google Search](https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjyuJSQxYaHAxWeAxAIHS0CDz0QPAgJ) e.g. [Rubber Strips](https://www.google.com/search?sca_esv=119356d5c00122f0&rlz=1C5CHFA_enSE941SE942&q=rubber+strips&udm=2&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3J_TJ4YMS4eRay1mUcjRHkZwkNnuzbvXdHSnZt8SI-ypec-U-KajbXe9hbStxnPJuWxTCm8NISzlcRgh-mkg5a1XRWoiIVMkT5RYbraDRnHsJFse2AdcMQ0qNzsDHDLrzlWTINDALsSJJNGpMRvO4XnQg0w6_&sa=X&ved=2ahUKEwii2tiNxYaHAxWDLBAIHcy3CvAQtKgLegQIFBAB&biw=1440&bih=779&dpr=2) and from the Swedish hardwarestore [Biltema](https://www.biltema.se/en-se/). 
+The opening page was added from [Pexels](https://www.pexels.com/) and it was also used in other areas of the website to appear professional depending on the navigation. A few product images as mentioned in the beginning the readme file was taken from a simple [Google Search](https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjyuJSQxYaHAxWeAxAIHS0CDz0QPAgJ) e.g. [Rubber Strips](https://www.google.com/search?sca_esv=119356d5c00122f0&rlz=1C5CHFA_enSE941SE942&q=rubber+strips&udm=2&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3J_TJ4YMS4eRay1mUcjRHkZwkNnuzbvXdHSnZt8SI-ypec-U-KajbXe9hbStxnPJuWxTCm8NISzlcRgh-mkg5a1XRWoiIVMkT5RYbraDRnHsJFse2AdcMQ0qNzsDHDLrzlWTINDALsSJJNGpMRvO4XnQg0w6_&sa=X&ved=2ahUKEwii2tiNxYaHAxWDLBAIHcy3CvAQtKgLegQIFBAB&biw=1440&bih=779&dpr=2) and from the Swedish hardware store [Biltema](https://www.biltema.se/en-se/). 
 
 The reason for it was made this way was to save time and find a product image that easily represented of its usage for the potential buyer. I wasn't allowed to private photos of [Folkfilter's](https://www.folkfilter.se/) tools and they use to their air filter replacement services. 
 
@@ -162,6 +162,14 @@ Stripe for the website is currently in developer mode, which allows us to be abl
 Stripe Documentation- setting up stripe elements to accept payment [docs](https://stripe.com/docs/js)
 
 ---
+
+## Deployment & Local Development
+
+### Deployment
+
+The project is deployed using Heroku. To deploy the project:
+
+
 
 ## Features
 
@@ -272,13 +280,89 @@ Stripe Documentation- setting up stripe elements to accept payment [docs](https:
 ![Add Product Page](assets/images/FEATURES/add-product-page.png)
 
 
-
 ### Future Implementations
 
 Favicon - wasn't implemented into the project. The reason behind this was that I started my project from scratch and didn't use Boutique Ado as foundation in beginning. Neither allauth packages thus some templates are in the allauth folder and other in core app. 
 
 A feature that unfortunately was not implemented into the project is that the admin is able to create an category to further enhance the website for its liking.
 
+### Accessibility
+
+I have paid careful attention while coding to make sure the website is as user-friendly as possible for all users. This has been accomplished by:
+
+* Using semantic HTML.
+* Using descriptive alt attributes on images on the site.
+* Providing information for screen readers where there are icons used and no text.
+* Ensuring that there is a sufficient color contrast throughout the site.
+* Accessibility was tested using Lighthouse and WAVE and further information can be found in the [TESTING.md](TESTING.md).
+
+## Deployment & Local Development
+
+### Deployment
+
+The project is deployed using Heroku. To deploy the project:
+
+#### **Create the Live Database**
+
+We have been using the sqlite3 database in development, however this is only available for use in development so we will need to create a new external database which can be accessed by Heroku.
+
+1. Go to the [ElephantSQL](https://www.elephantsql.com/) dashboard and click the create new instance button on the top right.
+2. Name the plan (your project name is a good choice), select tiny turtle plan (this is the free plan) and choose the region that is closest to you then click the review button.
+3. Check the details are all correct and then click create instance in the bottom right.
+4. Go to the dashboard and select the database just created.
+5. Copy the URL (you can click the clipboard icon to copy)
+
+#### **Heroku app setup**
+
+  1. From the [Heroku dashboard](https://dashboard.heroku.com/), click the new button in the top right corner and select create new app.
+  2. Give your app a name (this must be unique), select the region that is closest to you and then click the create app button bottom left.
+  3. Open the settings tab and create a new config var of `DATABASE_URL` and paste the database URL you copied from elephantSQL into the value (the value should not have quotation marks around it).
+
+#### **Preparation for deployment in GitPod**
+
+1. Install dj_database_url and psycopg2 (they are both needed for connecting to the external database you've just set up):
+
+   ```bash
+   pip3 install dj_database_url==0.5.0 psycopg2
+   ```
+
+2. Update your requirements.txt file with the packages just installed:
+
+    ```bash
+    pip3 freeze > requirements.txt
+    ```
+
+3. In settings.py underneath import os, add `import dj_database_url`
+
+4. Find the section for DATABASES and comment out the code. Add the following code below the commented out database block, and use the URL copied from elephantSQL for the value:
+
+    (NOTE! don't delete the original section, as this is a temporary step whilst we connect the external database. Make sure you don't push this value to GitHub - this value should not be saved to GitHub, it will be added to the Heroku config vars in a later step, this is temporary to allow us to migrate our models to the external database)
+
+    ```python
+    DATABASES = {
+        'default': dj_database_url.parse('paste-elephantsql-db-url-here')
+    }
+    ```
+
+5. In the terminal, run the show migrations command to confirm connection to the external database:
+
+    ```bash
+    python3 manage.py runserver
+    ```
+
+6. If you have connected the database correctly you will see a list of migrations that are unchecked. You can now run migrations to migrate the models to the new database:
+
+    ```bash
+    python3 manage.py migrate
+    ```
+
+7. Create a superuser for the new database. Input a username, email and password when directed.
+
+    ```bash
+    python3 manage.py createsuperuser
+    ```
+
+8. You should now be able to go to the browser tab on the left of the page in elephantsql, click the table queries button and see the user you've just created by selecting the auth_user table.
 
 ## Credits
 
@@ -292,7 +376,7 @@ I was also on a study break due to personal reasons and during that period I was
 
 #### Projects that has supported me thanks to Jubril Akolade(Mentor) 
 
-- [Boutique-Ado by Kera Cudmore](https://github.com/kera-cudmore/Boutique-Ado)
+- [Boutique-Ado by Kera Cudmore](https://github.com/kera-cudmore/Boutique-Ado) & I used the project's readme file as foundation. It might appear the same and I was stressed before I hand it in the project. Thus I some of the content within the readme file is structured the same. Plus I have dyslexia to save some time I was copy and pasted some of the words into my readme file. Likewise it's the same walkthrough project as it for the course at Code Institute. I want to have it addressed into my readme file and thanks for your understanding! 
 - [The Quiz Arms by Kera Cudmore](https://github.com/kera-cudmore/TheQuizArms)
 
 ### Other projects that have give me an inspiration to this project: 
@@ -302,8 +386,6 @@ I was also on a study break due to personal reasons and during that period I was
 - [How to Build an E-commerce Website with Django and Python](https://www.youtube.com/watch?app=desktop&v=YZvRrldjf1Y) 
 - [Python Django Ecommerce CRUD and UUID - Managing multiple addresses](https://www.youtube.com/watch?app=desktop&v=8SP76dopYVo)
 - [Building an Ecommerce Store with Django and Stripe Payments (Live Coding)](https://www.youtube.com/watch?app=desktop&v=g96MJj2pPg8&fbclid=IwAR3V1bLoN8-Np_HTYjNOfAGSmYmmWBfp0Lxv0IC_QJkxTbYx_EaHGLTfMU8)
-
-
 
 
 ## Credits to my mentor
