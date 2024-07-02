@@ -182,6 +182,8 @@ Stripe Documentation- setting up stripe elements to accept payment [docs](https:
 
 ![after-register-account](assets/images/FEATURES/after-register-account.png)
 
+#### Registered Personal Account view:
+
 5. Once you have created an account it it greats you with a new message on the home page. This is an indication that you're in and a sense of change within the navigation for the visitor. Who is now our full customer with more accessibility on the page. Besides has the navbar been updated:
 
 ![updated-navbar](assets/images/FEATURES/updated-navbar.png)
@@ -198,8 +200,9 @@ Stripe Documentation- setting up stripe elements to accept payment [docs](https:
 
 8. However, in order to see all the products again and make another product search you need to press on default button to clear the filter. 
 
-9. If chooses one of the categories you'll see either one or several items in the filter. * As mention the user needs to use the default filter button to see all the inventory again.  
+9. If chooses one of the categories you'll see either one or several items in the filter. * As mention the user needs to use the default filter button to see all the inventory again. *  
 
+10. If you decides to you purchase something, then you click on one of the products. In this case we purchases a vaccum cleaner 
 
 
 If you are an admin you are been allocated with a green button that's being called add product. This is to add some new products for the admin into the page and for customer to see how much they have spent in the cart area. 
