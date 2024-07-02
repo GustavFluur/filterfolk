@@ -1,6 +1,6 @@
 # Filter For Folks 
 
-![Am I responsive](assets/images/Am%20I%20responsive/Am%20I%20responsive%20.png)
+![Filter for Folks Banner](assets/images/Am%20I%20responsive/Am%20I%20responsive%20.png)
 
 ### Project Goals
 
@@ -449,6 +449,36 @@ We have been using the sqlite3 database in development, however this is only ava
     STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
     STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
     ```
+
+# Boutique Ado - Testing
+
+---
+
+## Automated Testing
+
+### HTML Validation
+
+[W3C validator](https://validator.w3.org/) was used to validate the HTML in this project.
+
+| Page | Result |
+| :--- | :--- |
+| Home | [Pass](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffilter-for-folks-58441ed4952a.herokuapp.com%2F) |
+| 17 errors| Not affecting the code |
+| Inventory page | [Pass](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffilter-for-folks-58441ed4952a.herokuapp.com%2Fproduct%2Fproducts%2F) |
+| 2 errors| Not affecting the code |
+| Products details | [Pass](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffilter-for-folks-58441ed4952a.herokuapp.com%2Fproduct%2F1%2F) |
+| 6 errors| Not affecting the code |
+
+
+| Add product | [Pass](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkera-cudmore-boutique-ado.herokuapp.com%2Fproducts%2Fadd%2F) |
+
+
+
+
+| Edit product | [Pass](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkera-cudmore-boutique-ado.herokuapp.com%2Fproducts%2Fedit%2F8%2F) |
+| Bag | [Pass](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkera-cudmore-boutique-ado.herokuapp.com%2Fbag%2F) |
+| Checkout | [Pass](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkera-cudmore-boutique-ado.herokuapp.com%2Fcheckout%2F) |
+| Profile | [Pass](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkera-cudmore-boutique-ado.herokuapp.com%2Fprofile%2F) |
 
 
 

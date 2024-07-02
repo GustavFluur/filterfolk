@@ -1,4 +1,5 @@
 from django.contrib.auth.decorators import login_required 
+from django.http import HttpResponseRedirect
 from django.shortcuts import render, reverse, get_object_or_404, redirect
 from django.db.models import Q
 from .models import Product, Category
@@ -54,7 +55,7 @@ def add_new_product(request):
             form = AddNewProductForm(request.POST, request.FILES)
             
             if form.is_valid():
-                product = form.save(commit=False) #for creating a new product without saving into DB
+                product = form.save(commit=False) 
                 product.save()
 
                 return redirect('product:product_detail', pk=product.id)
@@ -73,7 +74,7 @@ def delete_product(request, pk):
     product = get_object_or_404(Product, pk=pk)
     product.delete()
 
-    return redirect(reverse('products')) # Use reverse to get back to the products page
+    return redirect(reverse('home'))
 
 
 @login_required 
