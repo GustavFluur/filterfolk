@@ -364,6 +364,95 @@ We have been using the sqlite3 database in development, however this is only ava
 
 8. You should now be able to go to the browser tab on the left of the page in elephantsql, click the table queries button and see the user you've just created by selecting the auth_user table.
 
+9. We can now add an if/else statement for the databases in settings.py, so we use the development database while in development (the code we commented out) - and the external database on the live site (note the change where the db URL was is now a variable we will use in Heroku):
+
+    ```python
+    if 'DATABASE_URL' in os.environ:
+        DATABASES = {
+          'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        }
+    else:
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.sqlite3',
+                'NAME': os.path.join(BASE_DIR, 'db.sqlite3')
+          }
+        }
+    ```
+
+10. Install gunicorn which will act as our webserver and freeze this to the requirements.txt file:
+
+    ```bash
+    pip3 install gunicorn
+    pip3 freeze > requirements.txt
+    ```
+
+11. Create a `Procfile` in the root directory. This tells Heroku to create a web dyno which runs gunicorn and serves our django app. Add the following to the file (making sure not to leave any blank lines underneath):
+
+    ```Procfile
+    web: gunicorn boutique_ado.wsgi:application
+    ```
+
+12. Log into the Heroku CLI in the terminal and then run the following command to disable collectstatic. This command tells Heroku not to collect static files when we deploy:
+
+    ```bash
+    heroku config:set DISABLE_COLLECTSTATIC=1 --app heroku-app-name-here
+    ```
+
+13. We will also need to add the Heroku app and localhost (which will allow GitPod to still work) to ALLOWED_HOSTS = [] in settings.py:
+
+    ```python
+    ALLOWED_HOSTS = ['{heroku deployed site URL here}', 'localhost' ]
+    ```
+
+14. Save, add, commit and push the changes to GitHub. You can then also initialise the Heroku git remote in the terminal and push to Heroku with:
+
+    ```bash
+    heroku git:remote -a {app name here}
+    git push heroku master
+    ```
+
+15. You should now be able to see the deployed site (without any static files as we haven't set these up yet).
+
+16. To enable automatic deploys on Heroku, go to the deploy tab and click the connect to GitHub button in the deployment method section. Search for the projects repository and then click connect. Click enable automatic deploys at the bottom of the page.
+
+#### **Generate a SECRET KEY & Updating Debug**
+
+1. Django automatically sets a secret key when you create your project, however we shouldn't use this default key in our deployed version, as it leaves our site vulnerable. We can use a random key generator to create a new SECRET_KEY which we can then add to our Heroku config vars which will then keep the key protected.
+2. [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/) is an example of a site we could use to create our secret key. Create a new key and copy the value.
+3. In Heroku settings create a new config var with a key of `SECRET_KEY`. The value will be the secret key we just created. Click add.
+4. In settings.py we can now update the `SECRET_KEY` variable, asking it to get the secret key from the environment, or use an empty string in development:
+
+    ```python
+    SECRET_KEY = os.environ.get('SECRET_KEY', ' ')
+    ```
+
+5. We can now adjust the `DEBUG` variable to only set DEBUG as true if in development:
+
+    ```python
+    DEBUG = 'DEVELOPMENT' in os.environ
+    ```
+
+6. Save, add, commit and push these changes.
+
+#### **Setting up Stripe**
+
+1. We now need to add our Stripe keys to our config vars in Heroku to keep these out of our code and keep them private. Log into Stripe, click developers and then API keys.
+2. Create 2 new variables in Heroku's config vars - for the publishable key (STRIPE_PUBLIC_KEY) and the secret key (STRIPE_SECRET_KEY) and paste the values in from the Stripe page.
+3. Now we need to add the WebHook endpoint for the deployed site. Navigate to the WebHooks link in the left hand menu and click add endpoint button.
+4. Add the URL for our deployed sites WebHook, give it a description and then click the add events button and select all events. Click Create endpoint.
+5. Now we can add the WebHook signing secret to our Heroku config variables as STRIPE_WH_SECRET.
+6. In settings.py:
+
+    ```python
+    STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+    STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+    STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+    ```
+
+
+
+
 ## Credits
 
 The foundation of this project is based upon the walkthrough project [Boutique Ado](https://github.com/ckz8780/boutique_ado_v1). Since the requirements needed to have a checkout, cart, payment functionalities I used the majority of the code in that element. Because I saw the complexity of doing it dependently and Code Institute's TUT support referred me to the walkthrough project once I got stuck so I was forced to let it go to conduct my coding and followed the requirements for finalize the project accordingly. 
