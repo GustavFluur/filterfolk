@@ -1,6 +1,9 @@
 ### Project Goals
 
-Filter for Folks is a Business to Consumer (B2C) e-commerce site.
+
+[Am I responsive](assets/images/Am%20I%20responsive%20.png)
+
+[Filter for Folks](https://filter-for-folks-58441ed4952a.herokuapp.com/) is a Business to Consumer (B2C) e-commerce site.
 
 The sites primary audience will be people who are living in condominiums and require air filter replacement in their apartments.
 
