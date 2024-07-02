@@ -87,7 +87,7 @@ HTML, CSS, JavaScript, Python 3
 
 * sqlite3 - for the development database.
 * ~~ElephantSQL - For the deployed sites database.~~ - ElephantSQL announced EOL for its service in February 2024.
-* [CI DB](https://dbs.ci-dbs.net/) For the deployed site database
+* [Code Institute Database (DB)](https://dbs.ci-dbs.net/) For the deployed site database
 
 ### Frameworks Used
 
@@ -137,7 +137,7 @@ HTML, CSS, JavaScript, Python 3
 
 * [Google Dev Tools](https://developer.chrome.com/docs/devtools/) - To troubleshoot, test features and solve issues with responsiveness and styling.
 
-* [MailChimo](https://mailchimp.com/?currency=SEK) - To create newsletters. 
+* [Mail Chimp](https://mailchimp.com/?currency=SEK) - To create newsletters. 
 
 * [Color Scheme](https://coolors.co/000000-2f1000-621b00-945600-c75000) - To create colorschemes. 
 
