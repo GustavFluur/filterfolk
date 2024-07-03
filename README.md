@@ -22,6 +22,8 @@ This project was inspired by the Stockholm based company [Folkfilter](https://ww
 
 With this message I want to show them my gratitude that I was allowed to use their product images into my website. Other product images was taken through a google search and from another Swedish company calls [Biltema](https://www.biltema.se/). 
 
+* After the deployment of the website, something happen to the website's inventory page. Due to a lack of time and after deployment no changes can be made. I want to have this addressed in this Readme file. 
+
 ## Table of Contents
 
 
