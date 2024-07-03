@@ -178,7 +178,9 @@ HTML, CSS, JavaScript, Python 3
 
 * [Mail Chimp](https://mailchimp.com/?currency=SEK) - To create newsletters. 
 
-* [Color Scheme](https://coolors.co/000000-2f1000-621b00-945600-c75000) - To create colorschemes. 
+* [Color Scheme](https://coolors.co/000000-2f1000-621b00-945600-c75000) - To create colorschemes.
+
+* [Tamper Monkey - Chrome Extension](https://www.tampermonkey.net/) - by writing "How to" on Google it finds the a possible solution to your error or bug on [Stack Over Flow](https://stackoverflow.com/).
 
 ### Stripe
 
