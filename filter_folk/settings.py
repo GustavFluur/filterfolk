@@ -28,7 +28,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['filter-for-folks-58441ed4952a.herokuapp.com', '8000-gustavfluur-filterfolk-25mzj01s6md.ws.codeinstitute-ide.net']
 
