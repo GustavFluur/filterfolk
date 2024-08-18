@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['filter-for-folks-58441ed4952a.herokuapp.com', '8000-gustavfluur-filterfolk-25mzj01s6md.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = ['filter-for-folks-58441ed4952a.herokuapp.com', '8000-gustavfluur-filterfolk-ib3j7xjzl16.ws.codeinstitute-ide.net']
 
 LOGIN_URL = '/home'
 LOGIN_REDIRECT_URL = '/'
